@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Archangel-77
-- 👀 I’m interested in ... learning how to code nad programm the right way
+- 👀 I’m interested in ... learning how to code and practice programming, the right way
 - 🌱 I’m currently learning ...C and Python
 - 💞️ I’m looking to collaborate on ... University Projects Mostly
 - 📫 How to reach me ...Archdevil77#8675 its my Discord
