@@ -1,16 +1,43 @@
-## Hi there 👋
+# Panagiotis Panageas
 
-<!--
-**Archangel-77/Archangel-77** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Backend-focused software developer with strong interest in system design, concurrency, and clean architecture.
 
-Here are some ideas to get you started:
+Currently pursuing a BSc in Computer Science (Hellenic Open University).
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+## Featured Projects
+
+### Event-Driven Task Engine
+A modular, thread-based event processing engine demonstrating:
+- Producer–consumer pattern
+- Priority queues
+- Graceful shutdown
+- Structured logging
+- Deterministic concurrency
+
+### Tennis Club Ranking System
+Academic team project implementing:
+- Ranking algorithms
+- Object-oriented design
+- Business rule enforcement
+- Structured data management
+
+---
+
+## Technical Interests
+
+- Backend architecture
+- Concurrency & threading
+- Observability & logging
+- Clean, maintainable systems
+- Linux-based environments
+
+---
+
+## Languages & Tools
+
+- Python
+- SQL
+- Git
+- Linux
