@@ -171,14 +171,6 @@ Key runtime technologies
 
 ---
 
-# GitHub Stats
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Archangel-77\&show_icons=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Archangel-77\&layout=compact)
-
----
-
 # Contact
 
 GitHub
