@@ -44,7 +44,6 @@ Repository
 [https://github.com/Archangel-77/hutsix-public](https://github.com/Archangel-77/hutsix-public)
 
 ---
-
 # Architecture Overview
 
 ```
@@ -97,6 +96,10 @@ The system is designed as a **modular event-driven automation platform** with cl
 
 ---
 
+Demo Video
+https://www.youtube.com/watch?v=U0kk0Ldu5q4
+
+---
 # Projects
 
 ## Task Manager API
