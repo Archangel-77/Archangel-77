@@ -47,19 +47,56 @@ Repository
 # Architecture Overview
 
 ```
-PySide6 UI
-     ↓
-Profile / Configuration Layer
-     ↓
-Trigger Engine
-(HOTKEY | PIXEL | IMAGE | OCR)
-     ↓
-Watchdog Scheduler
-     ↓
-Action Executor
-(KEYBOARD | MOUSE)
-     ↓
-Diagnostics / Monitoring
+                   +----------------------+
+                   |      PySide6 UI      |
+                   +----------+-----------+
+                              |
+                              v
+                   +----------------------+
+                   | Profile / Config     |
+                   | Manager              |
+                   +----------+-----------+
+                              |
+                              v
+                  +-----------------------+
+                  |     Trigger Engine    |
+                  | HOTKEY | PIXEL        |
+                  | IMAGE  | OCR          |
+                  +----+-----------+------+
+                       |           |
+                       |           |
+             GUI EVENT BUS         |
+                       |           |
+                       v           v
+            +---------------------------+
+            |        Action Layer       |
+            | Keyboard / Mouse Binds   |
+            +------------+--------------+
+                         |
+                         v
+                +------------------+
+                |   WinAPI Layer   |
+                | Input Simulation |
+                +--------+---------+
+                         |
+                         v
+                +------------------+
+                |   Action Executor|
+                |  Deterministic   |
+                | Input Playback   |
+                +--------+---------+
+                         |
+                         v
+             +----------------------------+
+             | Watchdog Scheduler         |
+             | Health & Performance Layer |
+             +-------------+--------------+
+                           |
+                           v
+                  +------------------+
+                  | Diagnostics      |
+                  | Monitoring       |
+                  +------------------+
 ```
 
 The system is designed as a **modular event-driven automation platform** with clear separation between detection, scheduling, execution and monitoring layers.
