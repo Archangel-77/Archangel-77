@@ -118,6 +118,9 @@ Focus areas:
 
 Thread-based event processing engine demonstrating backend concurrency patterns.
 
+Repository
+https://github.com/Archangel-77/event-driven-task-engine
+
 Key concepts:
 
 * producer–consumer architecture
@@ -131,6 +134,9 @@ Key concepts:
 ## Tennis Club Ranking System
 
 Academic team project implementing ranking logic.
+
+Repository
+https://github.com/Archangel-77/Project_33-Tennis-Club-Ranking
 
 Focus areas:
 
