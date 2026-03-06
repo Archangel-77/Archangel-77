@@ -173,13 +173,8 @@ Key runtime technologies
 
 # Contact
 
-GitHub
-[https://github.com/Archangel-77](https://github.com/Archangel-77)
-
 YouTube
 [https://www.youtube.com/@Hutsix](https://www.youtube.com/@Hutsix)
 
 Discord
 [https://discord.gg/Sr5WUmeY](https://discord.gg/Sr5WUmeY)
-
-.
