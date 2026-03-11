@@ -14,6 +14,18 @@ Currently pursuing a **BSc in Computer Science at the Hellenic Open University**
 
 ---
 
+# Latest Update
+
+## agent-pr-firewall (GitHub App PR Governance)
+
+- Released `v0.1.1` with reporting hardening.
+- Updated docs with troubleshooting (`401` webhook signature, `403` integration permissions), token requirements, and security hygiene notes.
+
+Repository  
+https://github.com/Archangel-77/agent-pr-firewall
+
+---
+
 # Featured Project
 
 ## Hutsix — Computer Vision Automation Platform
