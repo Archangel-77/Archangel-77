@@ -1,238 +1,53 @@
-
 # Panagiotis Panageas
 
-### Python Developer | Automation Systems | Computer Vision
+Python Developer building automation systems, backend APIs, and computer vision tools.
 
-![Python](https://img.shields.io/badge/Python-Developer-yellow?logo=python)
-![Automation](https://img.shields.io/badge/Specialization-Automation-green)
-![Computer Vision](https://img.shields.io/badge/Field-Computer%20Vision-blue)
-![CUDA](https://img.shields.io/badge/GPU-CUDA-76B900?logo=nvidia)
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![PySide6](https://img.shields.io/badge/PySide6-Qt-41CD52?logo=qt&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![CUDA](https://img.shields.io/badge/CUDA-76B900?logo=nvidia&logoColor=white)
 
-Backend-focused developer interested in **system design, concurrency, and building modular software systems**.
+[Email](mailto:panpanageas@gmail.com) | [LinkedIn](https://www.linkedin.com/in/panagiotis-panageas-017ba1213) | Discord: `Archangel_7777`
 
-Currently pursuing a **BSc in Computer Science at the Hellenic Open University**.
+I build software with a strong emphasis on reliability, modular architecture, and practical delivery. My work spans Windows desktop automation, backend service development, and GPU-accelerated computer vision workflows. My academic background includes Computer Science studies at the Hellenic Open University and previous Applied Electronics studies.
 
----
+## Engineering Focus
 
-# Latest Update
+- Automation systems and desktop tooling
+- Backend APIs, authentication, and data-driven services
+- Computer vision pipelines and CUDA-backed workflows
+- Concurrency, event-driven systems, and diagnostics
+- Deployment-oriented engineering and operational hardening
 
-## agent-pr-firewall (GitHub App PR Governance)
+## Selected Work
 
-- Released `v0.1.1` with reporting hardening.
-- Updated docs with troubleshooting (`401` webhook signature, `403` integration permissions), token requirements, and security hygiene notes.
+| Project | What it is | Stack | Link |
+| --- | --- | --- | --- |
+| Hutsix | Windows desktop automation platform with profile-based triggers, deterministic actions, diagnostics, and vision workflows | Python, PySide6, OpenCV, OCR, CUDA | [hutsix-public](https://github.com/Archangel-77/hutsix-public) |
+| agent-pr-firewall | GitHub App webhook service for pull request governance and policy-based merge checks | TypeScript, Node.js, Octokit, GitHub Webhooks | [agent-pr-firewall](https://github.com/Archangel-77/agent-pr-firewall) |
+| task-manager-api | Production-style REST API with auth, ownership boundaries, migrations, tests, and container support | Python, FastAPI, SQLAlchemy, JWT, Alembic, Docker | [task-manager-api](https://github.com/Archangel-77/task-manager-api) |
+| event-driven-task-engine | Lightweight concurrency project demonstrating queue-backed dispatch, priority execution, and graceful shutdown | Python, threading, queues, pytest, GitHub Actions | [event-driven-task-engine](https://github.com/Archangel-77/event-driven-task-engine) |
 
-Repository  
-https://github.com/Archangel-77/agent-pr-firewall
+## Currently Building
 
----
+- `hutsix` (private): proprietary product repository behind Hutsix, focused on desktop automation, feature depth, diagnostics, and product hardening
+- `project_x` (private): AI pipeline platform for dataset generation, training workflows, job orchestration, artifact handling, and deployment profiles
 
-# Featured Project
+## Highlights
 
-## Hutsix — Computer Vision Automation Platform
+- Product-oriented Python engineering across both desktop and backend systems
+- Experience with service design, authentication flows, job processing, and operational reliability
+- Strong interest in modular system design, graceful failure handling, and testable architecture
+- Comfortable working across APIs, automation engines, computer vision modules, and deployment workflows
 
-Hutsix is a **Windows desktop automation platform** written in **Python and PySide6**.
+## Core Stack
 
-It automates repetitive keyboard and mouse workflows using a **profile-based visual system** built around trigger detection and deterministic action execution.
+`Python` `FastAPI` `PySide6` `OpenCV` `PyTorch` `CUDA` `SQLAlchemy` `PostgreSQL` `Redis` `TypeScript` `Node.js` `Docker`
 
-The platform combines:
+## Contact
 
-* automation architecture
-* computer vision pipelines
-* GPU acceleration
-* desktop application engineering
-
-### Key Features
-
-* modular trigger/action automation engine
-* pixel, image and OCR detection
-* profile-based automation workflows
-* deterministic keyboard and mouse playback
-* CUDA accelerated AI workflows
-* real-time diagnostics and monitoring
-
-Project scale: **~70,000 lines of Python code**
-
-Repository
-[https://github.com/Archangel-77/hutsix-public](https://github.com/Archangel-77/hutsix-public)
-
----
-# Architecture Overview
-
-```
-                   +----------------------+
-                   |      PySide6 UI      |
-                   +----------+-----------+
-                              |
-                              v
-                   +----------------------+
-                   | Profile / Config     |
-                   | Manager              |
-                   +----------+-----------+
-                              |
-                              v
-                  +-----------------------+
-                  |     Trigger Engine    |
-                  | HOTKEY | PIXEL        |
-                  | IMAGE  | OCR          |
-                  +----+-----------+------+
-                       |           |
-                       |           |
-             GUI EVENT BUS         |
-                       |           |
-                       v           v
-            +---------------------------+
-            |        Action Layer       |
-            | Keyboard / Mouse Binds   |
-            +------------+--------------+
-                         |
-                         v
-                +------------------+
-                |   WinAPI Layer   |
-                | Input Simulation |
-                +--------+---------+
-                         |
-                         v
-                +------------------+
-                |   Action Executor|
-                |  Deterministic   |
-                | Input Playback   |
-                +--------+---------+
-                         |
-                         v
-             +----------------------------+
-             | Watchdog Scheduler         |
-             | Health & Performance Layer |
-             +-------------+--------------+
-                           |
-                           v
-                  +------------------+
-                  | Diagnostics      |
-                  | Monitoring       |
-                  +------------------+
-```
-
-The system is designed as a **modular event-driven automation platform** with clear separation between detection, scheduling, execution and monitoring layers.
-
----
-
-# Tech Stack
-
-### Languages
-
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python\&logoColor=white)
-![C](https://img.shields.io/badge/C-00599C?logo=c\&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?logo=mysql\&logoColor=white)
-
-### Frameworks & Libraries
-
-![PySide6](https://img.shields.io/badge/PySide6-Qt-green)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv\&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-red?logo=pytorch)
-![YOLOX](https://img.shields.io/badge/YOLOX-Computer%20Vision-blue)
-![EasyOCR](https://img.shields.io/badge/EasyOCR-OCR-lightgrey)
-
-### Technologies
-
-![CUDA](https://img.shields.io/badge/CUDA-GPU%20Acceleration-76B900?logo=nvidia)
-![Computer Vision](https://img.shields.io/badge/Computer%20Vision-AI-blue)
-![Automation](https://img.shields.io/badge/Desktop-Automation-green)
-
-### Tools
-
-![Git](https://img.shields.io/badge/Git-F05032?logo=git\&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-black?logo=linux)
-![Windows](https://img.shields.io/badge/Windows-0078D6?logo=windows)
-
----
-
-Demo Video
-https://www.youtube.com/watch?v=U0kk0Ldu5q4
-
----
-# Projects
-
-## Task Manager API
-
-Backend REST API for task management systems.
-
-Repository
-[https://github.com/Archangel-77/task-manager-api](https://github.com/Archangel-77/task-manager-api)
-
-Focus areas:
-
-* REST API architecture
-* backend task management logic
-* structured application design
-
----
-
-## Event Driven Task Engine
-
-Thread-based event processing engine demonstrating backend concurrency patterns.
-
-Repository
-https://github.com/Archangel-77/event-driven-task-engine
-
-Key concepts:
-
-* producer–consumer architecture
-* priority queues
-* graceful shutdown handling
-* structured logging
-* deterministic concurrency
-
----
-
-## Tennis Club Ranking System
-
-Academic team project implementing ranking logic.
-
-Repository
-https://github.com/Archangel-77/Project_33-Tennis-Club-Ranking
-
-Focus areas:
-
-* ranking algorithms
-* object-oriented system design
-* business rule enforcement
-* structured data management
-
----
-
-# Low Level Development
-
-Experience with performance-oriented workflows such as:
-
-* building **OpenCV from source with CUDA support**
-* configuring GPU accelerated computer vision environments
-* integrating native C/C++ libraries into Python pipelines
-
----
-
-# Development Environment
-
-Typical development environment used for Hutsix.
-
-Operating System
-Windows 11
-
-Hardware
-
-* multi-core CPUs
-* CUDA capable NVIDIA GPUs
-
-Key runtime technologies
-
-* CUDA
-* OpenCV custom builds
-* GPU inference pipelines
-
----
-
-# Contact
-
-YouTube
-[https://www.youtube.com/@Hutsix](https://www.youtube.com/@Hutsix)
-
-Discord
-[https://discord.gg/Sr5WUmeY](https://discord.gg/Sr5WUmeY)
+- Email: [panpanageas@gmail.com](mailto:panpanageas@gmail.com)
+- LinkedIn: [panagiotis-panageas-017ba1213](https://www.linkedin.com/in/panagiotis-panageas-017ba1213)
+- Discord: `Archangel_7777`
