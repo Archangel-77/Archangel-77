@@ -29,11 +29,16 @@ I build software with a strong emphasis on reliability, modular architecture, an
 | agent-pr-firewall | GitHub App webhook service for pull request governance and policy-based merge checks | TypeScript, Node.js, Octokit, GitHub Webhooks | [agent-pr-firewall](https://github.com/Archangel-77/agent-pr-firewall) |
 | task-manager-api | Production-style REST API with auth, ownership boundaries, migrations, tests, and container support | Python, FastAPI, SQLAlchemy, JWT, Alembic, Docker | [task-manager-api](https://github.com/Archangel-77/task-manager-api) |
 | event-driven-task-engine | Lightweight concurrency project demonstrating queue-backed dispatch, priority execution, and graceful shutdown | Python, threading, queues, pytest, GitHub Actions | [event-driven-task-engine](https://github.com/Archangel-77/event-driven-task-engine) |
+| ollama-vscode-agent | Local-first VS Code extension for chat, workspace-grounded code edits, and approved terminal command execution via Ollama | TypeScript, VS Code API, Ollama | [ollama-vscode-agent](https://github.com/Archangel-77/ollama-vscode-agent) |
+| Project_33-Tennis-Club-Ranking | University team project — player registration, match recording, and ranking ladder management for a small tennis club | Python, OOP, standard library | [Project_33-Tennis-Club-Ranking](https://github.com/Archangel-77/Project_33-Tennis-Club-Ranking) |
 
 ## Currently Building
 
 - `hutsix` (private): proprietary product repository behind Hutsix, focused on desktop automation, feature depth, diagnostics, and product hardening
 - `project_x` (private): AI pipeline platform for dataset generation, training workflows, job orchestration, artifact handling, and deployment profiles
+- `listing-copilot` (private): SaaS scaffold for real estate agents — property CRUD, AI-backed listing draft generation, lead capture and follow-up workflows, seller reporting, Stripe billing, and full CI/Docker deployment | Next.js, TypeScript, Prisma, PostgreSQL, Auth.js, OpenAI
+- `replykit` (private): Chrome extension source-code asset for snippet management — on-page picker, page-aware variables, favorites, JSON import/export, and zero build-step Manifest V3 architecture | JavaScript
+- `prototype-arpg-souls-like` (private): early-stage ARPG souls-like game prototype
 
 ## Highlights
 
