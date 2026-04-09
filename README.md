@@ -1,6 +1,6 @@
 # Panagiotis Panageas
 
-> *Engineering software that performs with precision — automation systems, backend infrastructure, and GPU-accelerated vision at production depth.*
+> *I build software that solves real problems — automation platforms, backend infrastructure, and AI-integrated products shipped to completion.*
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
@@ -9,48 +9,51 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 ![CUDA](https://img.shields.io/badge/CUDA-76B900?logo=nvidia&logoColor=white)
 
-[Email](mailto:panpanageas@gmail.com) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/panagiotis-panageas-017ba1213) &nbsp;·&nbsp; Discord: `Archangel_7777`
+---
+
+Python developer with a background in Computer Science (Hellenic Open University) and Applied Electronics. I work across desktop automation, backend APIs, and GPU-accelerated vision — with a strong bias toward shipping things that actually run in production. I care about reliability, clean architecture, and building software that holds up over time.
 
 ---
 
-I design and build software that runs reliably under real conditions. My work spans Windows desktop automation, backend service architecture, and GPU-accelerated computer vision — each built with a strong emphasis on modularity, operational hardness, and delivery. Studied Computer Science at the Hellenic Open University, with a prior foundation in Applied Electronics.
+## What I Build
 
----
-
-## Domains
-
-| | |
-|---|---|
-| **Automation & Tooling** | Desktop automation platforms, profile-driven triggers, deterministic action engines |
-| **Backend Architecture** | REST APIs, authentication flows, job processing, data-driven services |
-| **Computer Vision** | CUDA-accelerated pipelines, OCR, OpenCV, PyTorch-backed inference |
-| **Systems & Concurrency** | Event-driven dispatch, queue-backed execution, graceful failure handling |
-| **Deployment & Operations** | Container workflows, CI/CD pipelines, health monitoring, operational hardening |
+- **Desktop automation** — profile-driven triggers, deterministic action engines, diagnostics, and vision workflows on Windows
+- **Backend services** — REST APIs, authentication systems, job processing, data pipelines
+- **Computer vision** — CUDA-accelerated inference, OCR, OpenCV, PyTorch
+- **SaaS products** — full-stack web apps with billing, auth, AI integration, and deployment
+- **Developer tooling** — VS Code extensions, GitHub Apps, Chrome extensions, CLI utilities
 
 ---
 
 ## Selected Work
 
-| Project | Description | Stack |
+| Project | What it does | Stack |
 |---|---|---|
-| [Hutsix](https://github.com/Archangel-77/hutsix-public) | Windows desktop automation platform — profile-based triggers, deterministic actions, diagnostics, and GPU-backed vision workflows | Python · PySide6 · OpenCV · OCR · CUDA |
-| [agent-pr-firewall](https://github.com/Archangel-77/agent-pr-firewall) | GitHub App webhook service for pull request governance and policy-based merge enforcement | TypeScript · Node.js · Octokit · GitHub Webhooks |
-| [task-manager-api](https://github.com/Archangel-77/task-manager-api) | Production-grade REST API with auth, ownership boundaries, migrations, tests, and container support | Python · FastAPI · SQLAlchemy · JWT · Alembic · Docker |
-| [event-driven-task-engine](https://github.com/Archangel-77/event-driven-task-engine) | Concurrency engine demonstrating queue-backed dispatch, priority execution, and graceful shutdown | Python · threading · queues · pytest · GitHub Actions |
-| [ollama-vscode-agent](https://github.com/Archangel-77/ollama-vscode-agent) | Local-first VS Code extension — streaming chat, workspace-grounded code edits, and approved terminal execution via Ollama | TypeScript · VS Code API · Ollama |
-| [Project_33-Tennis-Club-Ranking](https://github.com/Archangel-77/Project_33-Tennis-Club-Ranking) | University team project — player management, match recording, and ranking ladder computation for a sports club environment | Python · OOP · standard library |
+| [Hutsix](https://github.com/Archangel-77/hutsix-public) | Windows desktop automation platform — profile-based triggers, deterministic actions, diagnostics, and GPU-backed vision | Python · PySide6 · OpenCV · OCR · CUDA |
+| [agent-pr-firewall](https://github.com/Archangel-77/agent-pr-firewall) | GitHub App for pull request governance — webhook-driven policy checks and merge enforcement | TypeScript · Node.js · Octokit |
+| [task-manager-api](https://github.com/Archangel-77/task-manager-api) | Production-style REST API with auth, ownership boundaries, migrations, tests, and Docker support | Python · FastAPI · SQLAlchemy · JWT · Docker |
+| [event-driven-task-engine](https://github.com/Archangel-77/event-driven-task-engine) | Queue-backed concurrency engine with priority dispatch and graceful shutdown | Python · threading · queues · pytest |
+| [ollama-vscode-agent](https://github.com/Archangel-77/ollama-vscode-agent) | Local-first VS Code extension — chat, workspace-grounded edits, and approved terminal execution via Ollama | TypeScript · VS Code API · Ollama |
 
 ---
 
-## Currently Building
+## Shipped *(private)*
 
-**`hutsix`** *(private)* — The proprietary engine behind Hutsix. Ongoing investment in feature depth, diagnostics, automation reliability, and product hardening.
+Products I've built end-to-end and taken to a finished, deployable state.
 
-**`project_x`** *(private)* — An AI pipeline platform covering dataset generation, training workflows, job orchestration, artifact management, and deployment profiles.
+**`listing-copilot`** — SaaS platform for real estate agents. AI-backed listing draft generation, lead and follow-up pipeline, seller reporting, Stripe billing, transactional email, and full CI/Docker deployment. Built on Next.js, TypeScript, Prisma, PostgreSQL, and OpenAI.
 
-**`listing-copilot`** *(private)* — A SaaS platform for real estate agents. AI-backed listing draft generation, full lead and follow-up pipeline, seller reporting, Stripe billing, and production-ready CI/Docker deployment. Built on Next.js, TypeScript, Prisma, PostgreSQL, and OpenAI.
+**`replykit`** — Chrome extension for snippet management. On-page picker, page-aware variables, favorites, and JSON import/export — packaged as a transferable Manifest V3 source-code asset.
 
-**`replykit`** *(private)* — A Chrome extension source-code asset for snippet management. On-page picker, page-aware variables, favorites, JSON import/export, and a zero-build-step Manifest V3 architecture designed for handoff and resale.
+---
+
+## In Progress *(private)*
+
+Work currently in active development.
+
+**`hutsix`** — The proprietary engine behind Hutsix. Ongoing investment in feature depth, diagnostics, and automation reliability.
+
+**`project_x`** — AI pipeline platform for dataset generation, training workflows, job orchestration, artifact management, and deployment profiles.
 
 ---
 
