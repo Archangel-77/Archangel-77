@@ -38,8 +38,6 @@ I build software with a strong emphasis on reliability, modular architecture, an
 - `project_x` (private): AI pipeline platform for dataset generation, training workflows, job orchestration, artifact handling, and deployment profiles
 - `listing-copilot` (private): SaaS scaffold for real estate agents — property CRUD, AI-backed listing draft generation, lead capture and follow-up workflows, seller reporting, Stripe billing, and full CI/Docker deployment | Next.js, TypeScript, Prisma, PostgreSQL, Auth.js, OpenAI
 - `replykit` (private): Chrome extension source-code asset for snippet management — on-page picker, page-aware variables, favorites, JSON import/export, and zero build-step Manifest V3 architecture | JavaScript
-- `prototype-arpg-souls-like` (private): early-stage ARPG souls-like game prototype
-
 ## Highlights
 
 - Product-oriented Python engineering across both desktop and backend systems
