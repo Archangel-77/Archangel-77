@@ -1,68 +1,92 @@
 # Panagiotis Panageas
 
-> *I build software that solves real problems — automation platforms, backend infrastructure, and AI-integrated products shipped to completion.*
+**Python Backend Developer · Solo founder of a commercial Python product · Based in Greece**
 
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
-![PySide6](https://img.shields.io/badge/PySide6-Qt-41CD52?logo=qt&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
-![CUDA](https://img.shields.io/badge/CUDA-76B900?logo=nvidia&logoColor=white)
+[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](#)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)](#)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)](#)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)](#)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](#)
 
----
-
-Python developer with a background in Computer Science (Hellenic Open University) and Applied Electronics. I work across desktop automation, backend APIs, and GPU-accelerated vision — with a strong bias toward shipping things that actually run in production. I care about reliability, clean architecture, and building software that holds up over time.
+📧 [panpanageas@gmail.com](mailto:panpanageas@gmail.com) · 💼 [LinkedIn](https://www.linkedin.com/in/panagiotis-panageas-017ba1213) · 🎮 Discord: `Archangel_7777`
 
 ---
 
-## What I Build
+## 📌 About
 
-- **Desktop automation** — profile-driven triggers, deterministic action engines, diagnostics, and vision workflows on Windows
-- **Backend services** — REST APIs, authentication systems, job processing, data pipelines
-- **Computer vision** — CUDA-accelerated inference, OCR, OpenCV, PyTorch
-- **SaaS products** — full-stack web apps with billing, auth, AI integration, and deployment
-- **Developer tooling** — VS Code extensions, GitHub Apps, Chrome extensions, CLI utilities
+I'm a Python developer who has spent the last few years doing something most juniors haven't: **shipping a commercial software product, supporting real paying customers, and iterating on it for years.**
 
----
+My main work is **[Hutsix](https://github.com/Archangel-77/hutsix-public)** — a Python desktop automation platform I designed, built, and sell through Gumroad. Running it end-to-end has taught me the things that don't fit in tutorials: release discipline, graceful failure handling, observability, backwards-compatible changes, and saying no to scope creep.
 
-## Selected Work
-
-| Project | What it does | Stack |
-|---|---|---|
-| [Hutsix](https://github.com/Archangel-77/hutsix-public) | Windows desktop automation platform — profile-based triggers, deterministic actions, diagnostics, and GPU-backed vision | Python · PySide6 · OpenCV · OCR · CUDA |
-| [agent-pr-firewall](https://github.com/Archangel-77/agent-pr-firewall) | GitHub App for pull request governance — webhook-driven policy checks and merge enforcement | TypeScript · Node.js · Octokit |
-| [task-manager-api](https://github.com/Archangel-77/task-manager-api) | Production-style REST API with auth, ownership boundaries, migrations, tests, and Docker support | Python · FastAPI · SQLAlchemy · JWT · Docker |
-| [event-driven-task-engine](https://github.com/Archangel-77/event-driven-task-engine) | Queue-backed concurrency engine with priority dispatch and graceful shutdown | Python · threading · queues · pytest |
-| [ollama-vscode-agent](https://github.com/Archangel-77/ollama-vscode-agent) | Local-first VS Code extension — chat, workspace-grounded edits, and approved terminal execution via Ollama | TypeScript · VS Code API · Ollama |
+Alongside that, I build **Python backends** (FastAPI, async SQLAlchemy, PostgreSQL, Docker) and event-driven services. I'm now looking to bring that shipping mindset into a collaborative engineering team — remote or Greece-based.
 
 ---
 
-## Shipped *(private)*
+## 🏢 Flagship: Hutsix
 
-Products I've built end-to-end and taken to a finished, deployable state.
+> A commercial Python desktop automation platform. Paying users since 2023, under active development.
 
-**`listing-copilot`** — SaaS platform for real estate agents. AI-backed listing draft generation, lead and follow-up pipeline, seller reporting, Stripe billing, transactional email, and full CI/Docker deployment. Built on Next.js, TypeScript, Prisma, PostgreSQL, and OpenAI.
+| What it is | Why it matters |
+|---|---|
+| Stateful workflow engine with profile-based triggers | Real state machines, real transitions, real edge cases |
+| Async event processing & queue-based action dispatch | Same patterns used in backend job queues |
+| GPU-accelerated computer vision (OpenCV + PyTorch + CUDA) | Real-time image pipelines under latency constraints |
+| Modular service boundaries + structured diagnostics | Built to be debugged, not just to run happy-path |
+| Shipped to real users, actively supported | Proof I can build, ship, and maintain, not just prototype |
 
-**`replykit`** — Chrome extension for snippet management. On-page picker, page-aware variables, favorites, and JSON import/export — packaged as a transferable Manifest V3 source-code asset.
-
----
-
-## In Progress *(private)*
-
-Work currently in active development.
-
-**`hutsix`** — The proprietary engine behind Hutsix. Ongoing investment in feature depth, diagnostics, and automation reliability.
-
-**`project_x`** — AI pipeline platform for dataset generation, training workflows, job orchestration, artifact management, and deployment profiles.
+**Stack:** Python · PySide6 / Qt · OpenCV · PyTorch · CUDA · async processing · state machines
+**Repo:** [hutsix-public](https://github.com/Archangel-77/hutsix-public) · **Product:** distributed via Gumroad
 
 ---
 
-## Stack
+## 🛠️ Backend Work
 
-`Python` &nbsp; `FastAPI` &nbsp; `PySide6` &nbsp; `OpenCV` &nbsp; `PyTorch` &nbsp; `CUDA` &nbsp; `SQLAlchemy` &nbsp; `PostgreSQL` &nbsp; `Redis` &nbsp; `TypeScript` &nbsp; `Next.js` &nbsp; `Node.js` &nbsp; `Docker`
+The public projects below are where I practise the backend patterns I want to use day-to-day.
+
+### [`task-manager-api`](https://github.com/Archangel-77/task-manager-api) — Production-style REST API
+FastAPI · async SQLAlchemy · Alembic · PostgreSQL · JWT · Docker · pytest
+
+A REST API built the way I'd build one at work: per-user ownership isolation, JWT-protected endpoints, filtered and sorted list queries, Alembic migrations from day one, environment-based config, Docker Compose (API + Postgres), and a pytest suite covering auth, ownership, filtering, and CRUD. Swagger docs auto-generated.
+
+### [`agent-pr-firewall`](https://github.com/Archangel-77/agent-pr-firewall) — GitHub App / Webhook Service
+TypeScript · Node.js · Octokit · GitHub Webhooks
+
+A webhook-driven GitHub App that enforces pull-request policy and merge checks. Good demonstration of event-driven design and secure third-party API integration (signed webhooks, Octokit, scoped permissions).
+
+### [`event-driven-task-engine`](https://github.com/Archangel-77/event-driven-task-engine) — Concurrency Engine
+Python · threading · queues · pytest · GitHub Actions
+
+Queue-backed task dispatch with priority execution, graceful shutdown, and a CI-integrated test suite. The patterns transfer directly to message-broker consumers (RabbitMQ, Redis Streams) and async worker pools.
 
 ---
 
-## Contact
+## 🧰 Core Stack
 
-[panpanageas@gmail.com](mailto:panpanageas@gmail.com) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/panagiotis-panageas-017ba1213) &nbsp;·&nbsp; Discord: `Archangel_7777`
+**Backend:** Python · FastAPI · Pydantic · SQLAlchemy (async) · Alembic · REST · JWT · OpenAPI
+**Data:** PostgreSQL · Redis · SQLite · SQL (advanced) · query optimisation
+**DevOps:** Docker · Docker Compose · GitHub Actions · pytest · Git · Linux
+**Also:** TypeScript / Node.js · OpenCV · PyTorch · CUDA · PySide6 / Qt
+
+---
+
+## 🧭 How I work
+
+- **Small commits, readable history.** I'd rather land 30 small commits than one big-bang dump.
+- **Type-annotated, Pydantic-validated, tested.** If it isn't tested, I don't trust it.
+- **Migrations from day one.** Schemas change; pretending they don't is how teams get stuck.
+- **Observability before optimisation.** If I can't see it, I can't fix it.
+- **Write for the next engineer.** That engineer is usually me in six months.
+
+---
+
+## 📫 Get in touch
+
+I'm looking for **Python / backend roles** — remote or Greece-based. Happy to talk about FastAPI services, event-driven systems, or what it's like supporting a product you wrote yourself at 2am.
+
+- **Email:** [panpanageas@gmail.com](mailto:panpanageas@gmail.com)
+- **LinkedIn:** [panagiotis-panageas-017ba1213](https://www.linkedin.com/in/panagiotis-panageas-017ba1213)
+- **Discord:** `Archangel_7777`
+
+---
+
+<sub>Previously: 8 years as a submarine operator with the Hellenic Navy (2003–2011). Currently studying Computer Science at the Hellenic Open University.</sub>
