@@ -62,6 +62,18 @@ Queue-backed task dispatch with priority execution, graceful shutdown, and a CI-
 
 ---
 
+## 🔒 Other Builds (Private)
+
+Three additional commercial projects, currently private:
+
+**Listing Copilot** — Full SaaS for real estate agents. Next.js · TypeScript · Prisma · PostgreSQL · OpenAI · Stripe · Resend · Docker · Playwright. Auth, onboarding, AI listing copy generation, lead inbox, seller reports, and billing.
+
+**AI Pipeline Platform** — Network-deployed dataset generation and model training platform. FastAPI · Python · Redis · PostgreSQL · MinIO/S3 · Docker. Distributed async workers, multi-tenant API key auth, artifact storage, and CI/release gates.
+
+**ReplyKit** — A Manifest V3 Chrome extension for reusable snippet management with on-page insertion, page-aware variables, and JSON import/export.
+
+---
+
 ## ⚓ Service Background
 
 **Hellenic Navy · Petty Officer · Submarine Division · 2003–2011**
