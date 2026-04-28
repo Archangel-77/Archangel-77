@@ -1,6 +1,6 @@
 # Panagiotis Panageas
 
-**Python Backend Developer · Solo founder of a commercial Python product · Based in Greece**
+**Python Backend Developer · Built and ships a commercial Python product · Based in Greece**
 
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](#)
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)](#)
@@ -16,11 +16,14 @@
 
 I'm a Python developer who has spent the last few years doing something most juniors haven't: **shipping a commercial software product, supporting real paying customers, and iterating on it for years.**
 
-I started coding in 2022 and within a year had a commercial product with paying customers. Before that I spent 8 years as a Petty Officer in the Hellenic Navy — the kind of environment where logistics failures have real consequences and "it works on my machine" isn't an option. That background shapes how I approach software: operationally, not academically.
+I started coding in 2022 and within a year had a commercial product with paying customers. Before that I spent 8 years as a Petty Officer in the Hellenic Navy — the kind of environment where logistics failures have real consequences and "it works on my machine" isn't an option. That background shapes how I approach software: operationally, not academically. Small commits, typed and tested code, migrations from day one, and systems that fail loudly.
 
-My main work is **[Hutsix](https://github.com/Archangel-77/hutsix-public)** — a Python desktop automation platform I designed, built, and sell through Gumroad. Running it end-to-end has taught me the things that don't fit in tutorials: release discipline, graceful failure handling, observability, backwards-compatible changes, and saying no to scope creep.
+My main work is **[Hutsix](https://github.com/Archangel-77/hutsix-public)** — a Python desktop automation platform I designed, built, and sell through Gumroad. I build Python backends alongside it and I'm now looking to bring that shipping mindset into a collaborative engineering team — remote or Greece-based.
 
-Alongside that, I build **Python backends** (FastAPI, async SQLAlchemy, PostgreSQL, Docker) and event-driven services. I'm now looking to bring that shipping mindset into a collaborative engineering team — remote or Greece-based.
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Archangel-77&show_icons=true&theme=dark&hide_border=true&count_private=true" height="150"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Archangel-77&layout=compact&theme=dark&hide_border=true" height="150"/>
+</p>
 
 ---
 
@@ -43,8 +46,6 @@ Alongside that, I build **Python backends** (FastAPI, async SQLAlchemy, PostgreS
 
 ## 🛠️ Backend Work
 
-The public projects below are where I practise the backend patterns I want to use day-to-day.
-
 ### [`task-manager-api`](https://github.com/Archangel-77/task-manager-api) — Async FastAPI Reference Implementation
 FastAPI · async SQLAlchemy · Alembic · PostgreSQL · JWT · Docker · pytest
 
@@ -53,12 +54,12 @@ A deliberate showcase of FastAPI's async capabilities done right: fully async SQ
 ### [`agent-pr-firewall`](https://github.com/Archangel-77/agent-pr-firewall) — GitHub App / Webhook Service
 TypeScript · Node.js · Octokit · GitHub Webhooks
 
-A webhook-driven GitHub App that enforces pull-request policy and merge checks. Good demonstration of event-driven design and secure third-party API integration (signed webhooks, Octokit, scoped permissions).
+A webhook-driven GitHub App that enforces pull-request policy and merge checks. Event-driven design with secure third-party API integration — signed webhooks, Octokit, scoped permissions.
 
 ### [`event-driven-task-engine`](https://github.com/Archangel-77/event-driven-task-engine) — Concurrency Engine
 Python · threading · queues · pytest · GitHub Actions
 
-Queue-backed task dispatch with priority execution, graceful shutdown, and a CI-integrated test suite. The patterns transfer directly to message-broker consumers (RabbitMQ, Redis Streams) and async worker pools.
+Queue-backed task dispatch with priority execution, graceful shutdown, and a CI-integrated test suite. Patterns transfer directly to message-broker consumers (RabbitMQ, Redis Streams) and async worker pools.
 
 ---
 
@@ -91,23 +92,9 @@ Eight years responsible for submarine logistics: managing critical supplies, coo
 
 ---
 
-## 🧭 How I work
-
-- **Small commits, readable history.** I'd rather land 30 small commits than one big-bang dump.
-- **Type-annotated, Pydantic-validated, tested.** If it isn't tested, I don't trust it.
-- **Migrations from day one.** Schemas change; pretending they don't is how teams get stuck.
-- **Observability before optimisation.** If I can't see it, I can't fix it.
-- **Write for the next engineer.** That engineer is usually me in six months.
-
----
-
 ## 📫 Get in touch
 
 I'm looking for **Python / backend roles** — remote or Greece-based. Happy to talk about FastAPI services, event-driven systems, or what it's like supporting a product you wrote yourself at 2am.
 
 - **Email:** [panpanageas@gmail.com](mailto:panpanageas@gmail.com)
 - **LinkedIn:** [panagiotis-panageas-017ba1213](https://www.linkedin.com/in/panagiotis-panageas-017ba1213)
-
----
-
-<sub>Currently studying Computer Science at the Hellenic Open University (expected graduation 2028).</sub>
