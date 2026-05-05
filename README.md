@@ -18,6 +18,22 @@ I'm a Python developer who has spent the last few years doing something most jun
 
 I started coding in 2022 and within a year had a commercial product with paying customers. Before that I spent 8 years as a Petty Officer in the Hellenic Navy — the kind of environment where logistics failures have real consequences and "it works on my machine" isn't an option. That background shapes how I approach software: operationally, not academically. Small commits, typed and tested code, migrations from day one, and systems that fail loudly.
 
+I'm currently looking to bring that shipping mindset into a collaborative engineering team — remote or Greece-based.
+
+**Table of Contents**
+- [About](#about)
+- [Flagship: Hutsix](#flagship-hutsix)
+- [Backend Work](#backend-work)
+- [Other Builds (Private)](#other-builds-private)
+- [Service Background](#service-background)
+- [Core Stack](#core-stack)
+- [Get in touch](#get-in-touch)
+- [Contribution Guidelines](#contribution-guidelines)
+
+I'm a Python developer who has spent the last few years doing something most juniors haven't: **shipping a commercial software product, supporting real paying customers, and iterating on it for years.**
+
+I started coding in 2022 and within a year had a commercial product with paying customers. Before that I spent 8 years as a Petty Officer in the Hellenic Navy — the kind of environment where logistics failures have real consequences and "it works on my machine" isn't an option. That background shapes how I approach software: operationally, not academically. Small commits, typed and tested code, migrations from day one, and systems that fail loudly.
+
 My main work is **[Hutsix](https://github.com/Archangel-77/hutsix-public)** — a Python desktop automation platform I designed, built, and sell through Gumroad. I build Python backends alongside it and I'm now looking to bring that shipping mindset into a collaborative engineering team — remote or Greece-based.
 
 <p align="center">
@@ -29,18 +45,23 @@ My main work is **[Hutsix](https://github.com/Archangel-77/hutsix-public)** — 
 
 ## 🏢 Flagship: Hutsix
 
-> A commercial Python desktop automation platform. 50+ paying customers since 2023, under active development.
+> A commercial Python desktop automation platform. 50+ paying customers since 2023, under active development. **Challenges:** Overcoming real-time latency constraints in GPU-accelerated computer vision while maintaining stateful workflow reliability.
 
 | What it is | Why it matters |
 |---|---|
-| Stateful workflow engine with profile-based triggers | Real state machines, real transitions, real edge cases |
-| Async event processing & queue-based action dispatch | Same patterns used in backend job queues |
-| GPU-accelerated computer vision (OpenCV + PyTorch + CUDA) | Real-time image pipelines under latency constraints |
-| Modular service boundaries + structured diagnostics | Built to be debugged, not just to run happy-path |
-| Shipped to real users, actively supported | Proof I can build, ship, and maintain, not just prototype |
+| **Stateful workflow engine** with profile-based triggers | Enables complex automation workflows with real state transitions and edge case handling |
+| **Async event processing** & queue-based action dispatch | Implements patterns from backend job queues for reliable task execution |
+| **GPU-accelerated computer vision** (OpenCV + PyTorch + CUDA) | Achieves real-time image processing under strict latency requirements |
+| **Modular service architecture** + structured diagnostics | Designed for debuggability with clear service boundaries and failure diagnostics |
+| **Shipped to real users** with active support | Demonstrates ability to build, maintain, and iterate on production software |
 
-**Stack:** Python · PySide6 / Qt · OpenCV · PyTorch · CUDA · async processing · state machines
-**Repo:** [hutsix-public](https://github.com/Archangel-77/hutsix-public) · **Product:** distributed via Gumroad
+**Technical Stack:**
+- **Core:** Python 3.11+ · PySide6 / Qt for GUI
+- **Vision:** OpenCV 4.8 · PyTorch 2.0 · CUDA 12
+- **Architecture:** Async processing · State machines · Queue-based dispatch
+- **Deployment:** Dockerized · CI/CD with GitHub Actions
+
+**Repo:** [hutsix-public](https://github.com/Archangel-77/hutsix-public) · **Product:** Distributed via Gumroad
 
 ---
 
@@ -67,13 +88,53 @@ Queue-backed task dispatch with priority execution, graceful shutdown, and a CI-
 
 Three additional commercial projects, currently private:
 
-**Listing Copilot** — Full SaaS for real estate agents. Next.js · TypeScript · Prisma · PostgreSQL · OpenAI · Stripe · Resend · Docker · Playwright. Auth, onboarding, AI listing copy generation, lead inbox, seller reports, and billing.
+### **Listing Copilot** — Real Estate SaaS Platform
+> Full SaaS solution for real estate agents with AI-powered listing copy generation and lead management.
 
-**AI Pipeline Platform** — Network-deployed dataset generation and model training platform. FastAPI · Python · Redis · PostgreSQL · MinIO/S3 · Docker. Distributed async workers, multi-tenant API key auth, artifact storage, and CI/release gates.
+**Key Features:**
+- AI-generated listing copy using OpenAI API
+- Lead inbox with email integration (Resend)
+- Seller reports and analytics
+- Stripe-based billing system
+- Dockerized microservices architecture
 
-**ReplyKit** — A Manifest V3 Chrome extension for reusable snippet management with on-page insertion, page-aware variables, and JSON import/export.
+**Tech Stack:**
+- Frontend: Next.js · TypeScript
+- Backend: Prisma · PostgreSQL
+- DevOps: Docker · Playwright (testing)
+- Integrations: OpenAI · Stripe · Resend
 
 ---
+
+### **AI Pipeline Platform** — Distributed ML Infrastructure
+> Network-deployed platform for dataset generation and model training.
+
+**Key Features:**
+- Distributed async workers with Redis
+- Multi-tenant API key authentication
+- Artifact storage with MinIO/S3
+- CI/release gates for quality assurance
+
+**Tech Stack:**
+- Backend: FastAPI · Python 3.11
+- Data: PostgreSQL · Redis
+- DevOps: Docker · GitHub Actions
+- Storage: MinIO/S3
+
+---
+
+### **ReplyKit** — Chrome Extension for Snippet Management
+> Manifest V3 Chrome extension for managing reusable code snippets with on-page insertion.
+
+**Key Features:**
+- Page-aware variable substitution
+- JSON import/export capabilities
+- Secure storage with Chrome's API
+
+**Tech Stack:**
+- Chrome Extension: Manifest V3
+- Frontend: TypeScript
+- Storage: Chrome's secure storage API
 
 ## ⚓ Service Background
 
@@ -85,16 +146,47 @@ Eight years responsible for submarine logistics: managing critical supplies, coo
 
 ## 🧰 Core Stack
 
-**Backend:** Python · FastAPI · Pydantic · SQLAlchemy (async) · Alembic · REST · JWT · OpenAPI
-**Data:** PostgreSQL · Redis · SQLite · SQL (advanced) · query optimisation
-**DevOps:** Docker · Docker Compose · GitHub Actions · pytest · Git · Linux
-**Also:** TypeScript / Node.js · OpenCV · PyTorch · CUDA · PySide6 / Qt
+**Backend Development:**
+- **Primary:** Python 3.11+ · FastAPI · Pydantic v2
+- **ORM:** Async SQLAlchemy with Alembic migrations
+- **Auth:** JWT-based authentication with OpenAPI documentation
+- **Testing:** pytest framework with GitHub Actions CI
 
----
+**Data Technologies:**
+- **Databases:** PostgreSQL (primary) · Redis (caching) · SQLite (testing)
+- **Optimization:** Advanced SQL query optimization techniques
+
+**DevOps Infrastructure:**
+- **Containerization:** Docker · Docker Compose
+- **CI/CD:** GitHub Actions for automated testing and deployment
+- **Testing:** pytest with comprehensive test coverage
+
+**Additional Expertise:**
+- **Frontend:** TypeScript / Node.js
+- **Computer Vision:** OpenCV 4.8 · PyTorch 2.0 · CUDA 12
+- **GUI Development:** PySide6 / Qt framework
 
 ## 📫 Get in touch
 
 I'm looking for **Python / backend roles** — remote or Greece-based. Happy to talk about FastAPI services, event-driven systems, or what it's like supporting a product you wrote yourself at 2am.
 
-- **Email:** [panpanageas@gmail.com](mailto:panpanageas@gmail.com)
-- **LinkedIn:** [panagiotis-panageas-017ba1213](https://www.linkedin.com/in/panagiotis-panageas-017ba1213)
+**Preferred Communication Channels:**
+- **Email:** [panpanageas@gmail.com](mailto:panpanageas@gmail.com) (preferred for initial contact)
+- **LinkedIn:** [panagiotis-panageas-017ba1213](https://www.linkedin.com/in/panagiotis-panageas-017ba1213) (for professional networking)
+
+**Ideal Candidates:**
+- Experienced with async Python development
+- Familiar with FastAPI and modern backend patterns
+- Comfortable with DevOps tooling (Docker, GitHub Actions)
+- Interested in shipping production-ready software
+
+---
+
+## 📝 Contribution Guidelines
+
+1. **Code Quality:** All contributions must include type hints and pass the full test suite
+2. **Branching:** Feature work should be done in separate branches with clear commit messages
+3. **Testing:** Add tests for new features using pytest framework
+4. **Documentation:** Update README.md and any relevant technical documentation
+5. **Code Style:** Follow PEP8 guidelines with 2-space indentation
+6. **PR Process:** Submit pull requests with detailed descriptions of changes
