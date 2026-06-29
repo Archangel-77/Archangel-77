@@ -24,7 +24,7 @@ Email: [panpanageas@gmail.com](mailto:panpanageas@gmail.com) | LinkedIn: [panagi
 - Launched a commercial automation platform and maintained active support for paying users.
 - Built backend reference projects that demonstrate clean async architecture and production-ready patterns.
 - Implemented webhook and policy-enforcement automation for GitHub workflows.
-- Developed private SaaS and ML systems with billing, integrations, and distributed worker pipelines.
+- Developed private SaaS and ML systems with billing, integrations, renewal-risk analytics, and distributed worker pipelines.
 
 ## Flagship Product: Hutsix
 
@@ -63,6 +63,11 @@ Queue-backed concurrency engine in Python with priority scheduling and graceful 
 Focus: worker reliability patterns transferable to RabbitMQ/Redis Streams style systems.
 
 ## Private Commercial Builds
+
+### RenewalRadar (Private)
+
+B2B SaaS product for helping SaaS teams detect renewal risk before customers churn, combining account data, renewal dates, usage signals, support signals, billing status, health scoring, and AI-assisted next-best-action recommendations.
+Tech: Next.js, TypeScript, PostgreSQL, Prisma, Stripe, OpenAI, background jobs, CSV import workflows.
 
 ### Listing Copilot (Private)
 
