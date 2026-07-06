@@ -10,14 +10,14 @@
 
 Email: [panpanageas@gmail.com](mailto:panpanageas@gmail.com) | LinkedIn: [panagiotis-panageas-017ba1213](https://www.linkedin.com/in/panagiotis-panageas-017ba1213)
 
+
 ## Skills Snapshot
 
-- Built and monetized a commercial Python product with **50+ paying customers** since 2023.
-- Production backend engineering with **FastAPI, async SQLAlchemy, PostgreSQL, JWT auth, and Alembic migrations**.
-- Designed event-driven systems using **queues, state machines, and async processing**.
-- Applied strong delivery discipline: **Dockerized services, CI pipelines, typed code, and test-first workflow**.
-- Hands-on with high-performance workloads: **OpenCV + PyTorch + CUDA** under real-time constraints.
-- Full ownership mindset: I build, ship, monitor, support, and iterate from real customer feedback.
+- Built and monetized a commercial Python product with **50+ paying customers** since 2023. The product is focused on automating desktop workflows using cutting-edge technologies.
+- Production backend engineering with **FastAPI**, leveraging its asynchronous capabilities to handle high-concurrency scenarios efficiently. Utilized **async SQLAlchemy** for robust database interactions, ensuring data integrity and performance. Employed **PostgreSQL** for a scalable and reliable data storage solution, while using **JWT auth** for secure API access. Implemented **Alembic migrations** to manage schema changes seamlessly.
+- Designed event-driven systems with the use of **queues**, state machines, and async processing, enabling efficient task execution and real-time response handling.
+- Applied strong delivery discipline by Dockerizing services, setting up CI pipelines for automated testing and deployment, ensuring type safety with **typed code**, and adopting a test-first workflow to catch issues early in the development cycle.
+- Hands-on experience with high-performance workloads using **OpenCV** and **PyTorch** for advanced computer vision tasks, alongside leveraging **CUDA** for GPU acceleration to meet real-time latency requirements. Demonstrated a full ownership mindset by overseeing every aspect of product development from initial design to post-launch support.
 
 ## Selected Impact
 
