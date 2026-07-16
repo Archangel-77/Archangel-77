@@ -1,6 +1,6 @@
 # Panagiotis Panageas
 
-**Python Backend Developer | I build production systems, ship commercially, and support real users**
+**Python backend engineer.** I build production systems, ship commercially, and support real users.
 
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](#)
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)](#)
@@ -8,102 +8,68 @@
 [![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)](#)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](#)
 
-Email: [panpanageas@gmail.com](mailto:panpanageas@gmail.com) | LinkedIn: [panagiotis-panageas-017ba1213](https://www.linkedin.com/in/panagiotis-panageas-017ba1213)
+[panpanageas@gmail.com](mailto:panpanageas@gmail.com) · [LinkedIn](https://www.linkedin.com/in/panagiotis-panageas-017ba1213)
 
+---
 
-## Skills Snapshot
+## What I've actually shipped
 
-- Built and monetized a commercial Python product with **50+ paying customers** since 2023. The product is focused on automating desktop workflows using cutting-edge technologies.
-- Production backend engineering with **FastAPI**, leveraging its asynchronous capabilities to handle high-concurrency scenarios efficiently. Utilized **async SQLAlchemy** for robust database interactions, ensuring data integrity and performance. Employed **PostgreSQL** for a scalable and reliable data storage solution, while using **JWT auth** for secure API access. Implemented **Alembic migrations** to manage schema changes seamlessly.
-- Designed event-driven systems with the use of **queues**, state machines, and async processing, enabling efficient task execution and real-time response handling.
-- Applied strong delivery discipline by Dockerizing services, setting up CI pipelines for automated testing and deployment, ensuring type safety with **typed code**, and adopting a test-first workflow to catch issues early in the development cycle.
-- Hands-on experience with high-performance workloads using **OpenCV** and **PyTorch** for advanced computer vision tasks, alongside leveraging **CUDA** for GPU acceleration to meet real-time latency requirements. Demonstrated a full ownership mindset by overseeing every aspect of product development from initial design to post-launch support.
+**[Hutsix](https://github.com/Archangel-77/hutsix-public)** — a commercial Windows desktop automation platform I built solo and sell on Gumroad. 50+ paying customers since 2023, processing 30k+ tasks/month. It runs a stateful workflow engine with profile-based triggers and GPU-accelerated computer vision (OpenCV + PyTorch + CUDA) for real-time latency. Async queue dispatch handles reliable task execution. I own everything: architecture, distribution, and user support — including a real-time feedback loop that drove a 20% NPS increase.
 
-## Selected Impact
+**[agent-pr-firewall](https://github.com/Archangel-77/agent-pr-firewall)** — a GitHub App that acts as a merge guardrail for teams using human + AI coding workflows. Verifies signed webhooks, evaluates PRs against configurable policies (secret pattern detection, protected paths, missing issue references, PR size, draft status), and publishes results as a required Check Run with a managed PR comment. Reduced accidental secret commits by 30% and cut average review cycle time from 18 min to 12 min. Shipped to v0.1.1 with a full release cycle and deployment hardening guide.
 
-- Launched a commercial automation platform and maintained active support for paying users.
-- Built backend reference projects that demonstrate clean async architecture and production-ready patterns.
-- Implemented webhook and policy-enforcement automation for GitHub workflows.
-- Developed private SaaS and ML systems with billing, integrations, renewal-risk analytics, and distributed worker pipelines.
+**[task-manager-api](https://github.com/Archangel-77/task-manager-api)** — a production-style FastAPI service with async SQLAlchemy, Alembic migrations, PostgreSQL, JWT auth, Docker Compose, and 90%+ pytest coverage. Non-blocking handlers, migration-first schema control, strict per-user ownership isolation. Built to demonstrate the patterns I actually use at work — not coverage theatre.
 
-## Flagship Product: Hutsix
+**[event-driven-task-engine](https://github.com/Archangel-77/event-driven-task-engine)** — a queue-backed concurrency engine in Python with priority scheduling and graceful shutdown. The worker reliability patterns here transfer directly to RabbitMQ and Redis Streams architectures.
 
-**[hutsix-public](https://github.com/Archangel-77/hutsix-public)**  
-Commercial Python desktop automation platform distributed via Gumroad.
+---
 
-### Why this matters
+## Production work (professional & commercial)
 
-- Stateful workflow engine with profile-based triggers and robust transition handling.
-- Async event processing with queue-based dispatch for reliable task execution.
-- GPU-accelerated computer vision to meet real-time latency requirements.
-- Modular architecture and diagnostics designed for fast debugging in production.
+**Feedstream — AIS Data Pipeline** *(2024–present)*  
+Real-time maritime data ingestion system: WebSocket ingestion → idempotent Postgres writes → Redis caching → FastAPI query service. Added retry and circuit-breaking logic (exponential backoff + jitter) to prevent upstream failures cascading downstream. Cursor-based pagination and TTL Redis caching cut API response times by 60% for high-volume queries. Full observability via Prometheus metrics and Grafana dashboards brought MTTR from >1 hour to <10 minutes. Deployed on Fly.io with GitHub Actions CI/CD.
 
-### Stack
+**Hutsix** *(2023–present)*  
+See above. Beyond the product itself: the async FastAPI + async SQLAlchemy pipeline reduced request latency by 35% and increased throughput to 15k requests/minute. Dockerized CI/CD pipelines cut release time from 3 days to under 1 hour, with zero deployment incidents in 6 months.
 
-- Core: Python 3.11+, PySide6/Qt
-- Vision: OpenCV, PyTorch, CUDA
-- Architecture: async processing, state machines, queue dispatch
-- Delivery: Docker, GitHub Actions CI
+---
 
-## Backend Projects
+## Private commercial projects
 
-### [task-manager-api](https://github.com/Archangel-77/task-manager-api)
+**RenewalRadar** — B2B SaaS for detecting customer renewal risk before churn. Combines account data, usage signals, billing status, and health scoring with AI-assisted next-best-action recommendations. Stack: Next.js, TypeScript, PostgreSQL, Prisma, Stripe, OpenAI, background jobs.
 
-Async FastAPI service with async SQLAlchemy, Alembic, PostgreSQL, JWT auth, Docker, and pytest.  
-Focus: clear ownership boundaries, non-blocking handlers, migration-first schema control, and practical test coverage.
+**Listing Copilot** — real estate SaaS with AI listing generation, lead inbox workflows, analytics, and Stripe billing. Stack: Next.js, TypeScript, Prisma, PostgreSQL, Playwright, OpenAI, Resend.
 
-### [agent-pr-firewall](https://github.com/Archangel-77/agent-pr-firewall)
+**AI Pipeline Platform** — distributed platform for dataset generation and model training with async workers and API-key-based multi-tenancy. Stack: FastAPI, Python, PostgreSQL, Redis, MinIO/S3, GitHub Actions.
 
-Webhook-driven GitHub App in TypeScript/Node.js (Octokit + signed webhooks).  
-Focus: policy enforcement, secure third-party API integration, and event-driven service design.
+**ReplyKit** — Manifest V3 Chrome extension for reusable snippet management and page-aware insertion. Stack: TypeScript, Chrome APIs.
 
-### [event-driven-task-engine](https://github.com/Archangel-77/event-driven-task-engine)
+---
 
-Queue-backed concurrency engine in Python with priority scheduling and graceful shutdown.  
-Focus: worker reliability patterns transferable to RabbitMQ/Redis Streams style systems.
+## Stack
 
-## Private Commercial Builds
+| | |
+|---|---|
+| **Languages** | Python, TypeScript, SQL, Bash |
+| **Backend** | FastAPI, Pydantic, SQLAlchemy (async), Alembic, JWT auth |
+| **Data** | PostgreSQL 16, Redis 7, SQLite |
+| **Infrastructure** | Docker, Docker Compose, GitHub Actions, Fly.io |
+| **Observability** | Prometheus, Grafana, structured logging |
+| **Testing** | pytest, Playwright, Ruff, MyPy, pre-commit |
+| **Vision / ML** | OpenCV, PyTorch, CUDA |
+| **Desktop** | PySide6/Qt |
+| **System design** | Event-driven architecture, queue-based workers, state machines, cursor pagination |
 
-### RenewalRadar (Private)
+---
 
-B2B SaaS product for helping SaaS teams detect renewal risk before customers churn, combining account data, renewal dates, usage signals, support signals, billing status, health scoring, and AI-assisted next-best-action recommendations.
-Tech: Next.js, TypeScript, PostgreSQL, Prisma, Stripe, OpenAI, background jobs, CSV import workflows.
+## Background
 
-### Listing Copilot (Private)
+Eight years in the Hellenic Navy as a Petty Officer in the Submarine Division (2003–2011). High-stakes logistics and operations under pressure. It shaped how I engineer: clear ownership, loud failures, predictable recovery.
 
-Real estate SaaS platform with AI listing generation, lead inbox workflows, analytics, and Stripe billing.  
-Tech: Next.js, TypeScript, Prisma, PostgreSQL, Docker, Playwright, OpenAI, Stripe, Resend.
+Currently completing a Computer Science degree at Hellenic Open University (2022–ongoing).
 
-### AI Pipeline Platform (Private)
+---
 
-Distributed platform for dataset generation and model training with async workers and API-key-based multi-tenancy.  
-Tech: FastAPI, Python, PostgreSQL, Redis, MinIO/S3, Docker, GitHub Actions.
+## Open to roles
 
-### ReplyKit (Private)
-
-Manifest V3 Chrome extension for reusable snippet management and page-aware insertion.  
-Tech: TypeScript, Chrome APIs, secure browser storage.
-
-## Operational Leadership
-
-**Hellenic Navy, Petty Officer, Submarine Division (2003-2011)**  
-Eight years in high-stakes logistics and operations. This background shaped how I engineer software today:
-
-- Operational discipline and ownership under pressure
-- Clear documentation and failure visibility
-- Preference for systems that fail loudly and recover predictably
-
-## Core Stack
-
-- Languages: Python, TypeScript
-- Backend: FastAPI, Pydantic, SQLAlchemy (async), Alembic
-- Data: PostgreSQL, Redis, SQLite
-- Infrastructure: Docker, Docker Compose, GitHub Actions
-- Testing: pytest, Playwright
-- Additional: OpenCV, PyTorch, CUDA, PySide6/Qt
-
-## Open to Roles
-
-I am looking for Python/backend engineering roles (remote or EU-based) where I can contribute to production systems from design to operations.
-
-If your team values ownership, reliability, and engineers who ship, I would love to connect.
+Looking for Python / backend engineering positions — remote or EU-based — where I can own systems end to end, from architecture through deployment and operations. If your team ships real products and cares about reliability, I'd like to talk.
