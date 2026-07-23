@@ -66,10 +66,9 @@ See above. Beyond the product itself: the async FastAPI + async SQLAlchemy pipel
 
 Eight years in the Hellenic Navy as a Petty Officer in the Submarine Division (2003–2011). High-stakes logistics and operations under pressure. It shaped how I engineer: clear ownership, loud failures, predictable recovery.
 
-Currently completing a Computer Science degree at Hellenic Open University (2022–ongoing).
+##Education
+Applied Eletronics Bachelor's
+Computer Science Bachelor's 
 
 ---
 
-## Open to roles
-
-Looking for Python / backend engineering positions — remote or EU-based — where I can own systems end to end, from architecture through deployment and operations. If your team ships real products and cares about reliability, I'd like to talk.
