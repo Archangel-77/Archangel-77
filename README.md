@@ -66,7 +66,7 @@ See above. Beyond the product itself: the async FastAPI + async SQLAlchemy pipel
 
 Eight years in the Hellenic Navy as a Petty Officer in the Submarine Division (2003–2011). High-stakes logistics and operations under pressure. It shaped how I engineer: clear ownership, loud failures, predictable recovery.
 
-##Education
+## Education
 Applied Eletronics Bachelor's
 Computer Science Bachelor's 
 
