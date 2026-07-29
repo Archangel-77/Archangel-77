@@ -13,9 +13,6 @@ I specialize in turning messy real-world problems into reliable, observable syst
 [![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
-[![Archangel-77's GitHub stats](https://github-readme-stats.vercel.app/api?username=Archangel-77&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&count_private=true)](https://github.com/Archangel-77)
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Archangel-77&layout=compact&theme=dark&hide_border=true&bg_color=0d1117)](https://github.com/Archangel-77)
-
 [panpanageas@gmail.com](mailto:panpanageas@gmail.com) · [LinkedIn](https://www.linkedin.com/in/panagiotis-panageas-017ba1213) · [GitHub](https://github.com/Archangel-77)
 
 ---
