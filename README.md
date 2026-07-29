@@ -78,7 +78,7 @@ Eight years in the Hellenic Navy as a Petty Officer in the Submarine Division (2
 
 ## Education
 
-**B.Sc. Computer Science** — Hellenic Open University *(2022–ongoing)*
+**B.Sc. Computer Science** — Hellenic Open University
 
 ---
 
