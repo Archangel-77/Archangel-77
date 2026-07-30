@@ -22,7 +22,7 @@ I specialize in turning messy real-world problems into reliable, observable syst
 
 ## What I've actually shipped
 
-**[Hutsix](https://github.com/Archangel-77/hutsix-public)** — a commercial Windows desktop automation platform I built solo and sell on Gumroad. 50+ paying customers since 2023, processing 30k+ tasks/month. It runs a stateful workflow engine with profile-based triggers and GPU-accelerated computer vision (OpenCV + PyTorch + CUDA) for real-time latency. Async queue dispatch handles reliable task execution. I own everything: architecture, distribution, and user support — including a real-time feedback loop that drove a 20% NPS increase.
+**[Hutsix](https://github.com/Archangel-77/hutsix-public)** — a commercial Windows desktop automation platform I built solo and sell on Gumroad. with paying customers since 2023. It runs a stateful workflow engine with profile-based triggers and GPU-accelerated computer vision (OpenCV + PyTorch + CUDA) for real-time latency. Async queue dispatch handles reliable task execution. I own everything: architecture, distribution, and user support — including a real-time feedback loop that drove a 20% NPS increase.
 
 **[agent-pr-firewall](https://github.com/Archangel-77/agent-pr-firewall)** — a GitHub App that acts as a merge guardrail for teams using human + AI coding workflows. Verifies signed webhooks, evaluates PRs against configurable policies (secret pattern detection, protected paths, missing issue references, PR size, draft status), and publishes results as a required Check Run with a managed PR comment. Reduced accidental secret commits by 30% and cut average review cycle time from 18 min to 12 min. Shipped to v0.1.1 with a full release cycle and deployment hardening guide.
 
@@ -88,6 +88,6 @@ Looking for Python / backend engineering positions — remote or EU-based — wh
 
 ---
 
-📫 **Reach me:** [panpanageas@gmail.com](mailto:panpanageas@gmail.com) · [LinkedIn](https://www.linkedin.com/in/panagiotis-panageas-017ba1213) · [GitHub](https://github.com/Archangel-77)
+📫 **Reach me:** [panpanageas@gmail.com](mailto:panpanageas@gmail.com) · [LinkedIn](https://www.linkedin.com/in/panagiotis-panageas-017ba1213) · 
 
 ![Profile views](https://komarev.com/ghpvc/?username=Archangel-77&color=blue&style=flat)
