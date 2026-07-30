@@ -1,0 +1,8 @@
+# Ignore everything except README.md
+*
+
+# But keep README.md tracked
+!README.md
+
+# Keep .gitignore itself tracked
+!.gitignore
