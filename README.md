@@ -40,7 +40,7 @@ I specialize in turning messy real-world problems into reliable, observable syst
 Real-time maritime data ingestion system: WebSocket ingestion → idempotent Postgres writes → Redis caching → FastAPI query service. Added retry and circuit-breaking logic (exponential backoff + jitter) to prevent upstream failures cascading downstream. Cursor-based pagination and TTL Redis caching cut API response times by 60% for high-volume queries. Full observability via Prometheus metrics and Grafana dashboards brought MTTR from >1 hour to <10 minutes. Deployed on Fly.io with GitHub Actions CI/CD.
 
 **Hutsix** *(2023–present)*  
-See above. Beyond the product itself: the async FastAPI + async SQLAlchemy pipeline reduced request latency by 35% and increased throughput to 15k requests/minute. Dockerized CI/CD pipelines cut release time from 3 days to under 1 hour, with zero deployment incidents in 6 months.
+See above.
 
 ---
 
