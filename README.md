@@ -1,8 +1,6 @@
 # Panagiotis Panageas
 
-**Python backend engineer.** I build production systems, ship commercially, and support real users.
-
-I specialize in turning messy real-world problems into reliable, observable systems — from maritime data pipelines to commercial desktop automation. Async-native, PostgreSQL-backed, and built to survive production.
+**Python Backend Engineer** — building reliable, observable systems with async Python, PostgreSQL, and production-grade deployment practices.
 
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
@@ -16,43 +14,42 @@ I specialize in turning messy real-world problems into reliable, observable syst
 [![OCR](https://img.shields.io/badge/OCR-FF6F00?logo=tesseract&logoColor=white)](https://github.com/tesseract-ocr/tesseract)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
-[panpanageas@gmail.com](mailto:panpanageas@gmail.com) · [LinkedIn](https://www.linkedin.com/in/panagiotis-panageas-017ba1213) ·
+[panpanageas@gmail.com](mailto:panpanageas@gmail.com) · [LinkedIn](https://www.linkedin.com/in/panagiotis-panageas-017ba1213)
 
 ---
 
-## What I've actually shipped
+## About
 
-**[Hutsix](https://github.com/Archangel-77/hutsix-public)** — A commercial Windows desktop automation platform I built solo and sell on Gumroad, with paying customers since 2023. It runs a stateful workflow engine with profile-based triggers and GPU-accelerated computer vision (OpenCV + PyTorch + CUDA) for real-time latency. Async queue dispatch handles reliable task execution. I own everything: architecture, distribution, and user support .
-
-**[agent-pr-firewall](https://github.com/Archangel-77/agent-pr-firewall)** — a GitHub App that acts as a merge guardrail for teams using human + AI coding workflows. Verifies signed webhooks, evaluates PRs against configurable policies (secret pattern detection, protected paths, missing issue references, PR size, draft status), and publishes results as a required Check Run with a managed PR comment. Reduced accidental secret commits by 30% and cut average review cycle time from 18 min to 12 min. Shipped to v0.1.1 with a full release cycle and deployment hardening guide.
-
-**[task-manager-api](https://github.com/Archangel-77/task-manager-api)** — a production-style FastAPI service with async SQLAlchemy, Alembic migrations, PostgreSQL, JWT auth, Docker Compose, and 90%+ pytest coverage. Non-blocking handlers, migration-first schema control, strict per-user ownership isolation. Built to demonstrate the patterns I actually use at work — not coverage theatre.
-
-**[event-driven-task-engine](https://github.com/Archangel-77/event-driven-task-engine)** — a queue-backed concurrency engine in Python with priority scheduling and graceful shutdown. The worker reliability patterns here transfer directly to RabbitMQ and Redis Streams architectures.
-
-**[Conductor](https://github.com/Archangel-77/conductor)** — a lightweight, production-grade async task queue for Python teams that don't need Redis. PostgreSQL-backed with exactly-once semantics, exponential backoff retry, dead letter queue, structured logging, Prometheus metrics, and health checks — all without a message broker. 100% asyncio, 400+ tasks/sec per worker throughput. Published to PyPI as `conductor-task-queue`, with Docker Compose, Kubernetes, and systemd deployment guides. The patterns here (polling-based dispatch, idempotent processing, circuit-ready architecture) are the same ones I use in production data pipelines.
+Python backend engineer focused on systems that stay predictable under load and failure. Experience spans real-time data pipelines, commercial desktop automation, and developer tooling, with an emphasis on reliability, observability, and maintainability. Work is primarily in async Python (FastAPI, SQLAlchemy, asyncio) backed by PostgreSQL.
 
 ---
 
-## Production work (professional & commercial)
+## Professional Experience
 
 **Feedstream — AIS Data Pipeline** *(2024–present)*  
-Real-time maritime data ingestion system: WebSocket ingestion → idempotent Postgres writes → Redis caching → FastAPI query service. Added retry and circuit-breaking logic (exponential backoff + jitter) to prevent upstream failures cascading downstream. Cursor-based pagination and TTL Redis caching cut API response times by 60% for high-volume queries. Full observability via Prometheus metrics and Grafana dashboards brought MTTR from >1 hour to <10 minutes. Deployed on Fly.io with GitHub Actions CI/CD.
+Real-time maritime data ingestion system: WebSocket ingestion → idempotent PostgreSQL writes → Redis caching → FastAPI query service. Introduced retry and circuit-breaking logic (exponential backoff with jitter) to contain upstream failures and prevent them from cascading downstream. Cursor-based pagination and TTL-based Redis caching reduced API response times by 60% for high-volume queries. Added full observability via Prometheus metrics and Grafana dashboards, reducing mean time to recovery from over 1 hour to under 10 minutes. Deployed on Fly.io with GitHub Actions CI/CD.
 
-**Hutsix** *(2023–present)*  
-See above.
+**[Hutsix](https://github.com/Archangel-77/hutsix-public)** *(2023–present)*  
+Commercial Windows desktop automation platform, built and sold independently since 2023. Runs a stateful workflow engine with profile-based triggers and GPU-accelerated computer vision (OpenCV, PyTorch, CUDA) for low-latency interaction, with reliable task execution via async queue dispatch. Maintained end to end — architecture, distribution, and customer support.
 
 ---
 
-## Private commercial projects
+## Selected Projects
 
-**RenewalRadar** *(private repo)* — B2B SaaS for detecting customer renewal risk before churn. Combines account data, usage signals, billing status, and health scoring with AI-assisted next-best-action recommendations. Stack: Next.js, TypeScript, PostgreSQL, Prisma, Stripe, OpenAI, background jobs.
+**[agent-pr-firewall](https://github.com/Archangel-77/agent-pr-firewall)** — GitHub App that acts as a merge guardrail for teams using human + AI coding workflows. Verifies signed webhooks, evaluates pull requests against configurable policies (secret pattern detection, protected paths, missing issue references, PR size, draft status), and publishes results as a required check run with a managed PR comment. Measured results: 30% fewer accidental secret commits and a reduction in average review cycle time from 18 to 12 minutes. Released to v0.1.1 with a full release cycle and deployment hardening guide.
 
-**Listing Copilot** *(private repo)* — real estate SaaS with AI listing generation, lead inbox workflows, analytics, and Stripe billing. Stack: Next.js, TypeScript, Prisma, PostgreSQL, Playwright, OpenAI, Resend.
+**[task-manager-api](https://github.com/Archangel-77/task-manager-api)** — FastAPI service with async SQLAlchemy, Alembic migrations, PostgreSQL, JWT authentication, Docker Compose, and 90%+ pytest coverage. Non-blocking handlers, migration-first schema management, and strict per-user ownership isolation.
 
-**AI Pipeline Platform** *(private repo)* — distributed platform for dataset generation and model training with async workers and API-key-based multi-tenancy. Stack: FastAPI, Python, PostgreSQL, Redis, MinIO/S3, GitHub Actions.
+**[event-driven-task-engine](https://github.com/Archangel-77/event-driven-task-engine)** — Queue-backed concurrency engine in Python with priority scheduling and graceful shutdown. The worker reliability patterns carry over directly to RabbitMQ and Redis Streams architectures.
 
-**ReplyKit** *(private repo)* — Manifest V3 Chrome extension for reusable snippet management and page-aware insertion. Stack: TypeScript, Chrome APIs.
+**[Conductor](https://github.com/Archangel-77/conductor)** — PostgreSQL-backed async task queue for Python teams that don't require a separate message broker. Provides exactly-once semantics, exponential backoff retry, a dead letter queue, structured logging, Prometheus metrics, and health checks. Fully asyncio, with measured throughput of 400+ tasks/sec per worker. Published to PyPI as `conductor-task-queue`, with Docker Compose, Kubernetes, and systemd deployment guides.
+
+**Private commercial projects**
+
+- **RenewalRadar** *(private repo)* — B2B SaaS that detects customer renewal risk before churn, combining account data, usage signals, billing status, and health scoring with AI-assisted next-best-action recommendations. Stack: Next.js, TypeScript, PostgreSQL, Prisma, Stripe, OpenAI, background jobs.
+- **Listing Copilot** *(private repo)* — Real estate SaaS with AI listing generation, lead inbox workflows, analytics, and Stripe billing. Stack: Next.js, TypeScript, Prisma, PostgreSQL, Playwright, OpenAI, Resend.
+- **AI Pipeline Platform** *(private repo)* — Distributed platform for dataset generation and model training with async workers and API-key-based multi-tenancy. Stack: FastAPI, Python, PostgreSQL, Redis, MinIO/S3, GitHub Actions.
+- **ReplyKit** *(private repo)* — Manifest V3 Chrome extension for reusable snippet management and page-aware insertion. Stack: TypeScript, Chrome APIs.
 
 ---
 
@@ -72,22 +69,24 @@ See above.
 
 ---
 
-## Background
-
-Eight years in the Hellenic Navy as a Petty Officer in the Submarine Division (2003–2011). High-stakes logistics and operations under pressure. It shaped how I engineer: clear ownership, loud failures, predictable recovery.
-
 ## Education
 
-**B.Sc. Computer Science**
-**B.SC. Applied Electronics**
----
+- B.Sc. Computer Science (Ongoing)
 
-## Open to roles
-
-Looking for Python / backend engineering positions — remote or EU-based — where I can own systems end to end, from architecture through deployment and operations. If your team ships real products and cares about reliability, I'd like to talk.
 
 ---
 
-📫 **Reach me:** [panpanageas@gmail.com](mailto:panpanageas@gmail.com) · [LinkedIn](https://www.linkedin.com/in/panagiotis-panageas-017ba1213) · 
+## Background
+
+- Participated in Google Bootcamp 2022 as part of a team on project Ecodeorama.
+- Currently working on FlameverseAI.
+
+---
+
+## Open to Roles
+
+Open to Python / backend engineering positions — remote or EU-based — with end-to-end ownership from architecture through deployment and operations.
+
+📫 **Contact:** [panpanageas@gmail.com](mailto:panpanageas@gmail.com) · [LinkedIn](https://www.linkedin.com/in/panagiotis-panageas-017ba1213)
 
 ![Profile views](https://komarev.com/ghpvc/?username=Archangel-77&color=blue&style=flat)
