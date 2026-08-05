@@ -26,7 +26,7 @@ Python backend engineer focused on systems that stay predictable under load and 
 
 ## Professional Experience
 
-**Feedstream — AIS Data Pipeline** *(2024–present)*  
+**Feedstream(https://github.com/Archangel-77/feedstream) — AIS Data Pipeline** *(2024–present)*  
 Real-time maritime data ingestion system: WebSocket ingestion → idempotent PostgreSQL writes → Redis caching → FastAPI query service. Introduced retry and circuit-breaking logic (exponential backoff with jitter) to contain upstream failures and prevent them from cascading downstream. Cursor-based pagination and TTL-based Redis caching reduced API response times by 60% for high-volume queries. Added full observability via Prometheus metrics and Grafana dashboards, reducing mean time to recovery from over 1 hour to under 10 minutes. Deployed on Fly.io with GitHub Actions CI/CD.
 
 **[Hutsix](https://github.com/Archangel-77/hutsix-public)** *(2023–present)*  
