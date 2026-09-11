@@ -28,43 +28,37 @@ Python backend engineer focused on systems that stay predictable under load and 
 
 ---
 
-## Professional Experience
+## Flagships
 
-**Feedstream — AIS Data Pipeline** *(2024–present)* — [repo](https://github.com/Archangel-77/feedstream) · [live](https://feedstream.fly.dev/)  
-Real-time maritime data ingestion system: WebSocket ingestion → idempotent PostgreSQL writes → Redis caching → FastAPI query service. Introduced retry and circuit-breaking logic (exponential backoff with jitter) to contain upstream failures and prevent them from cascading downstream. Cursor-based pagination and TTL-based Redis caching reduced API response times by 60% for high-volume queries. Added full observability via Prometheus metrics and Grafana dashboards, reducing mean time to recovery from over 1 hour to under 10 minutes. Deployed on Fly.io with GitHub Actions CI/CD and a separate retention job.
+Three systems I designed, built, and operate end to end. Each is public, deployed or distributed, and documented with its own architecture decisions and known limitations.
 
-**[Hutsix](https://github.com/Archangel-77/hutsix-public)** *(2023–present)*  
-Commercial Windows desktop automation platform, built and sold independently since 2023. Runs a stateful workflow engine with profile-based triggers (hotkeys, pixel, template matching, OCR) and GPU-accelerated computer vision (OpenCV, PyTorch, CUDA, YOLOX) for low-latency interaction, with reliable task execution via async queue dispatch. Maintained end to end — architecture, distribution, and customer support.
+**[Hutsix](https://github.com/Archangel-77/hutsix-public)** — commercial Windows desktop automation platform, sold through a public storefront since 2023 (€29.99, 14 releases). A profile-based workflow engine with a trigger evaluator (global hotkeys, pixel, template matching, OCR, YOLOX models), a watchdog scheduler enforcing per-binding cooldowns, and a deterministic input executor behind a focus guard. Ships as an MSI with a SHA-256-hashed release manifest, license activation, and per-binding diagnostics that explain why any trigger did or did not fire. Python, PySide6, OpenCV, PyTorch, CUDA. Maintained end to end: architecture, packaging, distribution, and customer support.
+
+**[Conductor](https://github.com/Archangel-77/conductor)** — PostgreSQL-backed async task queue for Python teams who don't want to run a broker, published to PyPI as [`conductor-task-queue`](https://pypi.org/project/conductor-task-queue/) (v0.2.0). Atomic claiming via `FOR UPDATE SKIP LOCKED`, retries with exponential backoff, a dead-letter queue, priority routing, recurring tasks, per-task-type circuit breakers, task dependencies, and a gRPC API for polyglot workers. Delivery is at-least-once with idempotent handlers — a distinction the README documents rather than glosses over.
+
+**[feedstream](https://github.com/Archangel-77/feedstream)** — real-time AIS maritime ingestion and query service, [live on Fly.io](https://feedstream.fly.dev/). A WebSocket ingestion worker feeding idempotent PostgreSQL writes (`ON CONFLICT` dedup keys), Redis caching, and a FastAPI query API. Reconnect logic uses exponential backoff with jitter plus an in-process circuit breaker. Ships five architecture decision records, Prometheus/Grafana dashboards, request-ID tracing, structured JSON logs, and an explicit list of accepted trade-offs. Alembic migrations run in CI before each release, and a separate retention process purges expired rows.
 
 ---
 
-## Selected Projects
+## Other Projects
 
 ### Backend & Infrastructure
 
-**[feedstream](https://github.com/Archangel-77/feedstream)** — Production-oriented real-time AIS maritime data ingestion and query service. Idempotent writes via `ON CONFLICT` dedup keys, cursor pagination, Redis-backed caching and rate limiting, structured JSON logging with request tracing, and Prometheus/Grafana dashboards. Deployment on Fly.io with GitHub Actions CI/CD.
-
-**[Conductor](https://github.com/Archangel-77/conductor)** — PostgreSQL-backed async task queue for Python teams that don't require a separate message broker. Provides exactly-once semantics, exponential backoff retry, a dead letter queue, structured logging, Prometheus metrics, and health checks. Fully asyncio, with measured throughput of 400+ tasks/sec per worker. Published to PyPI as `conductor-task-queue` (v0.1.0), with Docker Compose, Kubernetes, and systemd deployment guides.
-
 **[task-manager-api](https://github.com/Archangel-77/task-manager-api)** — Production-style FastAPI service with async SQLAlchemy, Alembic migrations, PostgreSQL, JWT authentication, Docker Compose, and 85%+ pytest coverage. Non-blocking handlers, migration-first schema management, and strict per-user ownership isolation.
 
-**[event-driven-task-engine](https://github.com/Archangel-77/event-driven-task-engine)** — Queue-backed concurrency engine in Python with priority scheduling and graceful shutdown (~100k events/sec in FIFO mode). The worker reliability patterns carry over directly to RabbitMQ and Redis Streams architectures.
+**[event-driven-task-engine](https://github.com/Archangel-77/event-driven-task-engine)** — Queue-backed concurrency engine in Python with priority scheduling and graceful shutdown, built around a clean separation between dispatch and execution. The worker reliability patterns carry over directly to RabbitMQ and Redis Streams architectures.
 
 **[project_x_public](https://github.com/Archangel-77/project_x_public)** — Distributed platform for dataset generation and model training. FastAPI job API, async dataset/training workers, Redis + PostgreSQL job backend with automatic fallback, API-key-based multi-tenancy, and S3/MinIO artifact storage with retention cleanup. CI and release-acceptance gates included.
 
 ### Developer Tooling
 
-**[agent-pr-firewall](https://github.com/Archangel-77/agent-pr-firewall)** — GitHub App that acts as a merge guardrail for teams using human + AI coding workflows. Verifies signed webhooks, evaluates pull requests against configurable policies (secret pattern detection, protected paths, missing issue references, PR size, draft status), and publishes results as a required check run with a managed PR comment. Measured results: 30% fewer accidental secret commits and a reduction in average review cycle time from 18 to 12 minutes. Released to v0.1.1 with a full release cycle and deployment hardening guide.
+**[agent-pr-firewall](https://github.com/Archangel-77/agent-pr-firewall)** — GitHub App that acts as a merge guardrail for teams using human + AI coding workflows. Verifies signed webhooks, evaluates pull requests against configurable policies (secret pattern detection, protected paths, missing issue references, PR size, draft status), and publishes results as a required check run with a managed PR comment. Released to v0.1.1 with a full release cycle and a deployment hardening guide.
 
 **[ollama-vscode-agent](https://github.com/Archangel-77/ollama-vscode-agent)** — Local-first VS Code extension that connects to Ollama for streaming chat, grounded workspace context, reviewed code edits (diff preview with explicit apply/reject), and approved terminal command execution.
 
 ### Web & E-commerce
 
 **[django-digital-products](https://github.com/Archangel-77/django-digital-products)** — Production-ready Django 4.2 e-commerce platform for selling digital products directly to consumers: product management, cart and checkout, Stripe webhooks, automated file delivery, order management, an admin dashboard, Celery + Redis, and Docker Compose.
-
-### Commercial
-
-**[hutsix-public](https://github.com/Archangel-77/hutsix-public)** — Public showcase for the Hutsix desktop automation platform: profile-based visual automation with hotkey, pixel, image/template, and OCR triggers; GPU-accelerated AI workflows (CUDA, YOLOX); and an action recorder/player with per-binding diagnostics.
 
 ---
 
@@ -91,13 +85,14 @@ Commercial Windows desktop automation platform, built and sold independently sin
 | **SaaS / Web** | Next.js, Stripe, Auth.js, OpenAI API, Resend |
 | **Vision / ML** | OpenCV, PyTorch, CUDA, YOLOX, ONNX Runtime |
 | **Desktop** | PySide6/Qt |
-| **System design** | Event-driven architecture, queue-based workers, state machines, circuit breakers, cursor pagination, exactly-once semantics |
+| **System design** | Event-driven architecture, queue-based workers, state machines, circuit breakers, cursor pagination, at-least-once delivery with idempotent handlers |
 
 ---
 
 ## Education
 
 - B.Sc. Computer Science
+- B.Sc. Applied Electronics
 
 ---
 
