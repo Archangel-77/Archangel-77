@@ -14,3 +14,7 @@
 # Keep the Pages shell tracked
 !.nojekyll
 !index.html
+
+# Keep the Pages workflow tracked
+!.github/
+!.github/**
