@@ -17,8 +17,9 @@
 [![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![Stripe](https://img.shields.io/badge/Stripe-635BFF?logo=stripe&logoColor=white)](https://stripe.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![CV](https://img.shields.io/badge/CV-View%20online-111827)](https://archangel-77.github.io/Archangel-77/cv/)
 
-[panpanageas@gmail.com](mailto:panpanageas@gmail.com) · [LinkedIn](https://www.linkedin.com/in/panagiotis-panageas-017ba1213)
+📄 **[View my CV](https://archangel-77.github.io/Archangel-77/cv/)** · [panpanageas@gmail.com](mailto:panpanageas@gmail.com) · [LinkedIn](https://www.linkedin.com/in/panagiotis-panageas-017ba1213)
 
 ---
 
@@ -107,6 +108,6 @@ Three systems I designed, built, and operate end to end. Each is public, deploye
 
 Open to Python / backend engineering positions — remote or EU-based — with end-to-end ownership from architecture through deployment and operations.
 
-📫 **Contact:** [panpanageas@gmail.com](mailto:panpanageas@gmail.com) · [LinkedIn](https://www.linkedin.com/in/panagiotis-panageas-017ba1213)
+📫 **Contact:** [panpanageas@gmail.com](mailto:panpanageas@gmail.com) · [LinkedIn](https://www.linkedin.com/in/panagiotis-panageas-017ba1213) · 📄 [CV](https://archangel-77.github.io/Archangel-77/cv/)
 
 ![Profile views](https://komarev.com/ghpvc/?username=Archangel-77&color=blue&style=flat)
