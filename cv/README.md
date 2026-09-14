@@ -19,7 +19,7 @@ machine reads the same facts a person does.
 Verify it with Google's Rich Results Test, or:
 
 ```bash
-curl -s https://archangel-77.github.io/cv/ | grep -A2 'application/ld+json'
+curl -s https://archangel-77.github.io/Archangel-77/cv/ | grep -A2 'application/ld+json'
 ```
 
 ## Print to PDF
@@ -35,13 +35,23 @@ pages, so the output is stable. It is designed to land on two pages.
 
 ## Publish to GitHub Pages
 
-The profile repository is `Archangel-77/Archangel-77`, which serves at
-`https://archangel-77.github.io/`.
+The profile repository is `Archangel-77/Archangel-77`.
 
-1. Commit `cv/` (the repository `.gitignore` now allows it).
-2. **Settings → Pages → Build and deployment → Source: Deploy from a branch**,
-   branch `main`, folder `/ (root)`.
-3. The CV is then live at `https://archangel-77.github.io/cv/`.
+> **On the URL path:** a repository named the same as its owner is the *profile* repo,
+> not the `<owner>.github.io` root repo. GitHub therefore serves it under the
+> repository name rather than at the domain root.
+
+Pages is already enabled for this repository (branch `main`, folder `/`), so the CV is
+live at:
+
+**https://archangel-77.github.io/Archangel-77/cv/**
+
+To re-enable it or point it elsewhere:
+
+```bash
+gh api -X POST repos/Archangel-77/Archangel-77/pages \
+  -f 'source[branch]=main' -f 'source[path]=/'
+```
 
 That URL is worth more than the CV itself: it is clickable from your GitHub
 profile, your email signature, and a LinkedIn headline.
