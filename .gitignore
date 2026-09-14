@@ -10,3 +10,7 @@
 # Keep the CV package tracked
 !cv/
 !cv/**
+
+# Keep the Pages shell tracked
+!.nojekyll
+!index.html
