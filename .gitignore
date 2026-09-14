@@ -6,3 +6,7 @@
 
 # Keep .gitignore itself tracked
 !.gitignore
+
+# Keep the CV package tracked
+!cv/
+!cv/**

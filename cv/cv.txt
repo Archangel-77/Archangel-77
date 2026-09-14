@@ -1,0 +1,178 @@
+PANAGIOTIS PANAGEAS
+Python Backend Engineer
+Messinia, Greece | Remote (EU)
+
+Email:     panpanageas@gmail.com
+Phone:     +30 697 210 7200
+GitHub:    https://github.com/Archangel-77
+LinkedIn:  https://www.linkedin.com/in/panagiotis-panageas-017ba1213
+Languages: Greek (native), English (professional)
+
+Reliability, observability, and systems that stay predictable under load and failure.
+
+--------------------------------------------------------------------------------
+PROFILE
+--------------------------------------------------------------------------------
+
+Backend engineer who builds and operates systems rather than demos. I ship software
+commercially - a paid Windows automation product with 14 public releases - and run a
+real-time ingestion service in production. My work concentrates on the failure modes
+most portfolios skip: idempotent writes, circuit breakers, retries with backoff and
+jitter, dead-letter queues, and the observability that shortens recovery. I write down
+the trade-offs I accept instead of hiding them, because an undocumented decision is a
+future outage.
+
+VERIFIABLE
+- Live service: https://feedstream.fly.dev/
+- PyPI package: conductor-task-queue v0.2.0
+- Paid product: 14 public releases
+- Design record: 5 architecture decision records
+
+--------------------------------------------------------------------------------
+FLAGSHIP SYSTEMS
+--------------------------------------------------------------------------------
+
+HUTSIX - COMMERCIAL WINDOWS AUTOMATION PLATFORM
+2023 - present | sold independently
+Profile-based workflow engine with GPU-accelerated computer vision, distributed as a
+paid product.
+
+- Designed a trigger evaluator covering global hotkeys, pixel colour, template
+  matching, OCR, and YOLOX object models, behind a watchdog scheduler that enforces
+  per-binding cooldowns and a focus guard restricting input to a target executable.
+- Built release engineering around a SHA-256-hashed manifest and license activation,
+  and added a preflight gate that fails the build when the configured app version
+  disagrees with the version being published - after diagnosing exactly that mismatch
+  on a clean install.
+- Shipped per-binding diagnostics that explain why a trigger did or did not fire,
+  replacing user guesswork with a traceable execution timeline.
+
+Stack: Python, PySide6, OpenCV, PyTorch, CUDA, YOLOX, EasyOCR, MSI packaging,
+license activation
+
+CONDUCTOR - POSTGRESQL-BACKED ASYNC TASK QUEUE
+2026 | open source | PyPI v0.2.0
+Reliable background jobs for Python teams that do not want to operate a message broker.
+
+- Implemented atomic claiming with FOR UPDATE SKIP LOCKED so a task is never handed to
+  two workers concurrently; delivery is at-least-once, with idempotent handlers named
+  as the contract in the docs.
+- Built retries with exponential backoff, a dead-letter queue with retry and discard,
+  priority routing, recurring cron schedules, per-task-type circuit breakers, and
+  dependency chains that propagate BLOCKED state.
+- Instrumented with Prometheus metrics, health endpoints, and structured logging; added
+  a React dashboard, a gRPC API for polyglot workers, and deployment artifacts for
+  Docker, Kubernetes, and systemd.
+
+Stack: Python 3.11+, asyncio, PostgreSQL, asyncpg, Pydantic, gRPC, Prometheus,
+FastAPI + React
+
+FEEDSTREAM - REAL-TIME AIS MARITIME INGESTION AND QUERY SERVICE
+2026 | live: https://feedstream.fly.dev/ | source: https://github.com/Archangel-77/feedstream
+Continuous ingestion of an external event stream, stored durably and served with
+low-latency queries.
+
+- Ingestion worker consumes an upstream WebSocket feed and writes idempotently using
+  deterministic dedup keys with ON CONFLICT DO NOTHING, so replayed events and process
+  restarts cannot create duplicate rows.
+- Reconnection uses exponential backoff with jitter plus an in-process circuit breaker;
+  the query API serves cursor-paginated responses behind Redis caching and
+  Redis-backed per-endpoint rate limiting.
+- Instrumented end to end - Prometheus metrics scraped from both the API and worker
+  processes, provisioned Grafana dashboards, request-ID propagation, structured JSON
+  logs, and a separate retention job that purges expired rows.
+
+Stack: FastAPI, SQLAlchemy 2.x async, PostgreSQL 16, Redis 7, Alembic, Prometheus,
+Grafana, Fly.io, GitHub Actions
+
+--------------------------------------------------------------------------------
+ENGINEERING PRACTICE
+--------------------------------------------------------------------------------
+
+Languages:       Python, TypeScript, SQL, Bash, JavaScript
+Reliability:     Idempotent ingestion, backoff with jitter, circuit breakers,
+                 dead-letter queues, graceful shutdown
+Backend:         FastAPI, SQLAlchemy 2.x (async), Pydantic v2, Alembic, asyncpg,
+                 aiohttp, Django / DRF
+Data:            PostgreSQL 16, Redis 7, Prisma, SQLite; cursor pagination,
+                 schema migrations in CI
+Architecture:    Event-driven design, queue-based workers, state machines,
+                 multi-tenant APIs, at-least-once delivery
+Observability:   Prometheus, Grafana, structured JSON logging, request tracing,
+                 health and readiness endpoints
+Infrastructure:  Docker, Docker Compose, GitHub Actions, Fly.io, Kubernetes
+                 manifests, systemd
+Quality:         pytest, pytest-asyncio, Vitest, Playwright, Ruff, MyPy, pre-commit
+Vision / ML:     OpenCV, PyTorch, CUDA, YOLOX, ONNX Runtime, EasyOCR
+Desktop:         PySide6 / Qt
+
+--------------------------------------------------------------------------------
+EXPERIENCE
+--------------------------------------------------------------------------------
+
+INDEPENDENT SOFTWARE ENGINEER
+2023 - present
+Design, build, and commercially distribute software end to end.
+
+- Own the full lifecycle: architecture, implementation, packaging and release
+  engineering, licensing, documentation, and direct customer support.
+- Operate production services on Fly.io with GitHub Actions CI/CD, secrets held outside
+  the repository, and Alembic migrations applied before each release so the schema is
+  always ahead of the running code.
+
+HELLENIC NAVY - SUBMARINE OPERATIONS
+8 years of service
+High-consequence operational environment with no tolerance for unverified assumptions.
+
+- Operated and maintained complex systems under strict procedure, where faults had to be
+  diagnosed correctly the first time and deviations documented rather than improvised
+  around.
+- That habit - check before acting, record what changed, never assume the system is in
+  the state you left it - is the same discipline I apply to release engineering and
+  incident response.
+
+--------------------------------------------------------------------------------
+OTHER PROJECTS
+--------------------------------------------------------------------------------
+
+agent-pr-firewall - GitHub App enforcing merge policy on pull requests: verifies signed
+  webhooks, evaluates secret patterns, protected paths, and PR size, then publishes a
+  required check run and a managed PR comment. (TypeScript, Octokit, zod, vitest)
+
+task-manager-api - FastAPI service with async SQLAlchemy, Alembic migrations, JWT
+  authentication, Docker Compose, and 85%+ pytest coverage. (Python)
+
+project_x_public - distributed dataset-generation and model-training platform: FastAPI
+  job API, async workers, Redis plus PostgreSQL backend with automatic fallback,
+  API-key multi-tenancy, S3/MinIO artifact storage. (Python)
+
+django-digital-products - Django 4.2 and Stripe e-commerce: cart and checkout, webhooks,
+  automated file delivery, admin dashboard, Celery and Redis. (Python)
+
+event-driven-task-engine - queue-backed concurrency engine with priority scheduling and
+  graceful shutdown. (Python)
+
+ollama-vscode-agent - local-first VS Code extension for Ollama: streaming chat,
+  workspace context, reviewed edits with explicit apply/reject, approved terminal
+  execution. (TypeScript)
+
+RenewalRadar (private) - B2B SaaS detecting customer renewal risk: health scoring,
+  renewal tracking, and AI-assisted next-best-action recommendations.
+  (Next.js, Prisma, PostgreSQL, OpenAI, Stripe)
+
+Listing Copilot (private) - real-estate SaaS: AI listing drafts, public one-sheet
+  sharing with lead capture, inquiry inbox and follow-up queue, seller reports, Stripe
+  billing. (Next.js App Router, Prisma, Auth.js, OpenAI, Resend, Playwright)
+
+ReplyKit (private) - Manifest V3 Chrome extension for reusable snippets with page-aware
+  variables and an on-page picker. (TypeScript, Chrome APIs)
+
+--------------------------------------------------------------------------------
+EDUCATION
+--------------------------------------------------------------------------------
+
+B.Sc. Computer Science
+B.Sc. Applied Electronics
+
+--------------------------------------------------------------------------------
+Last updated 14 September 2026
