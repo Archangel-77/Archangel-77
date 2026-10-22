@@ -82,6 +82,6 @@ A TypeScript GitHub App that verifies webhook signatures, checks each pull reque
 
 ## Contact
 
-**Open to internship, junior and freelance roles — remote or EU-based.**
+**Open to freelance and contract roles — remote only.**
 
 [panpanageas@gmail.com](mailto:panpanageas@gmail.com) · [LinkedIn](https://www.linkedin.com/in/panagiotis-panageas-017ba1213) · [CV](https://archangel-77.github.io/Archangel-77/cv/)
