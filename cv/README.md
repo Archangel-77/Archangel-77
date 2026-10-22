@@ -13,7 +13,7 @@ Three artefacts, each for a different reader.
 `index.html` carries a JSON-LD `Person` schema in its `<head>`. Most screening
 pipelines now parse a CV with a language model before a human sees it, and a
 plain PDF gives that model nothing but positional text. The schema states name,
-title, contact, location, credentials, and `knowsAbout` explicitly, so the
+title, contact, location, spoken languages and `knowsAbout` explicitly, so the
 machine reads the same facts a person does.
 
 Verify it with Google's Rich Results Test, or:
