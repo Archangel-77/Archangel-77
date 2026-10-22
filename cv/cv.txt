@@ -24,8 +24,16 @@ contract work, remote only.
 EXPERIENCE
 --------------------------------------------------------------------------------
 
+FLAMEVERSE AI - BACK END DEVELOPER
+June 2026 - present | remote
+
+Career-guidance platform that maps emerging roles and career paths using AI analysis.
+
+- Part of the rebuild of the platform's backend and the migration of its front end to
+  React.
+
 INDEPENDENT SOFTWARE DEVELOPER - HUTSIX
-2026 - present | sold commercially, 18 releases
+2022 - present | sold commercially since 2026, 18 releases
 
 Windows desktop automation app written in Python with PySide6. I wrote its core and its
 UI myself, with AI assistance for much of the remaining code.

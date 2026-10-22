@@ -13,7 +13,7 @@
 
 ## About
 
-I'm a Python developer. I work mostly on backend services and automation: FastAPI and SQLAlchemy services, asyncio workers, pytest suites, and the occasional PySide6 desktop app. Hutsix is my own commercial product — I wrote its core and its UI myself and used AI assistance for much of the rest; in Conductor, feedstream and my other repositories I specified the architecture and AI wrote most of the implementation, which I review, test and operate. I'm early in my career and don't claim senior-level experience — everything below is something I can walk through in an interview.
+I'm a Python developer: I work as a back end developer at FlameVerse AI, a career-guidance platform, and I run Hutsix as my own commercial product. My work is mostly backend services and automation: FastAPI and SQLAlchemy services, asyncio workers, pytest suites, and the occasional PySide6 desktop app. On Hutsix I wrote the core and the UI myself and used AI assistance for much of the rest; in Conductor, feedstream and my other repositories I specified the architecture and AI wrote most of the implementation, which I review, test and operate. I'm early in my career and don't claim senior-level experience — everything below is something I can walk through in an interview.
 
 ---
 
