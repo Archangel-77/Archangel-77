@@ -96,4 +96,10 @@ Learning:          PyTorch, Prometheus, TypeScript
 Spoken languages:  Greek (native), English (professional)
 
 --------------------------------------------------------------------------------
+EDUCATION
+--------------------------------------------------------------------------------
+
+B.Sc. Computer Science - Hellenic Open University, in progress (started October 2022)
+
+--------------------------------------------------------------------------------
 Last updated 22 October 2026
