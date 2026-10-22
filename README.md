@@ -80,6 +80,12 @@ A TypeScript GitHub App that verifies webhook signatures, checks each pull reque
 
 ---
 
+## Education
+
+**B.Sc. Computer Science** — Hellenic Open University, in progress (October 2022 – expected June 2028).
+
+---
+
 ## Contact
 
 **Open to freelance and contract roles — remote only.**
