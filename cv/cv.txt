@@ -103,4 +103,16 @@ B.Sc. Computer Science - Hellenic Open University, in progress (October 2022 - e
 June 2028)
 
 --------------------------------------------------------------------------------
-Last updated 22 October 2026
+REPOSITORIES - github.com/Archangel-77
+--------------------------------------------------------------------------------
+
+Public:  hutsix-public, conductor, feedstream, agent-pr-firewall, task-manager-api,
+         event-driven-task-engine, ollama-vscode-agent, django-digital-products,
+         Project_33-Tennis-Club-Ranking, for-hire, appforge-releases,
+         project_x_public, tradeproof-legal
+
+Private: hutsix, appforge, tradeproof, glaucometrics, listing-copilot, promo-hutsix,
+         project_x, RenewalRadar, replykit
+
+--------------------------------------------------------------------------------
+Last updated 19 November 2026
