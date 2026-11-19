@@ -21,7 +21,7 @@ I'm a Python developer: I work as a back end developer at FlameVerse AI, a caree
 
 ### Hutsix
 
-A Windows desktop automation app written in Python with PySide6, sold commercially since 2026 and currently at 18 releases. I wrote its core and its UI myself, with AI assistance for much of the remaining code; profiles bind triggers (hotkeys, pixel colour, OpenCV template matching, OCR text, AI image triggers) to recorded keyboard and mouse actions, with cooldowns and a focus guard. Source is private — see the [showcase and MSI downloads](https://github.com/Archangel-77/hutsix-public) or the [storefront](https://panpanageas.gumroad.com/l/rrstan).
+A Windows desktop automation app written in Python with PySide6, sold commercially since 2026 and currently at 26 releases. I wrote its core and its UI myself, with AI assistance for much of the remaining code; profiles bind triggers (hotkeys, pixel colour, OpenCV template matching, OCR text, AI image triggers) to recorded keyboard and mouse actions, with cooldowns and a focus guard. Source is private — see the [showcase and MSI downloads](https://github.com/Archangel-77/hutsix-public) or the [storefront](https://panpanageas.gumroad.com/l/rrstan).
 
 Everything else below follows one pattern: I specify the architecture and behaviour, AI writes most of the code, and I review, test and run it.
 
@@ -56,13 +56,42 @@ flowchart LR
 
 [Archangel-77/feedstream](https://github.com/Archangel-77/feedstream)
 
-### task-manager-api
+---
 
-A small FastAPI service with async SQLAlchemy, JWT auth, Alembic migrations and `owner_id` filtering on every task query. The pytest suite covers authentication and CRUD: [Archangel-77/task-manager-api](https://github.com/Archangel-77/task-manager-api).
+## All repositories
 
-### agent-pr-firewall
+### Public
 
-A TypeScript GitHub App that verifies webhook signatures, checks each pull request against policies (secret patterns, protected paths, missing issue reference, PR size, draft status) and publishes the result as a check run: [Archangel-77/agent-pr-firewall](https://github.com/Archangel-77/agent-pr-firewall).
+| Repository | What it is |
+| :--------- | :--------- |
+| [Archangel-77](https://github.com/Archangel-77/Archangel-77) | This profile and the published CV |
+| [hutsix-public](https://github.com/Archangel-77/hutsix-public) | Hutsix showcase, MSI downloads and release manifest |
+| [conductor](https://github.com/Archangel-77/conductor) | The task queue above, on PyPI |
+| [feedstream](https://github.com/Archangel-77/feedstream) | The AIS ingestion service above |
+| [agent-pr-firewall](https://github.com/Archangel-77/agent-pr-firewall) | GitHub App that verifies webhook signatures, checks pull requests against policies and publishes a check run |
+| [task-manager-api](https://github.com/Archangel-77/task-manager-api) | FastAPI service with JWT auth, Alembic migrations and `owner_id` scoping; pytest covers auth and CRUD |
+| [event-driven-task-engine](https://github.com/Archangel-77/event-driven-task-engine) | Thread-based worker engine with priority scheduling and graceful shutdown |
+| [ollama-vscode-agent](https://github.com/Archangel-77/ollama-vscode-agent) | VS Code extension for local Ollama models: chat, context, reviewed edits |
+| [django-digital-products](https://github.com/Archangel-77/django-digital-products) | Early Django storefront experiment, unfinished |
+| [Project_33-Tennis-Club-Ranking](https://github.com/Archangel-77/Project_33-Tennis-Club-Ranking) | Fork of a team project — a tennis ladder app |
+| [for-hire](https://github.com/Archangel-77/for-hire) | Landing page, unused |
+| [appforge-releases](https://github.com/Archangel-77/appforge-releases) | AppForge installer and release manifest, no source |
+| [project_x_public](https://github.com/Archangel-77/project_x_public) | README for the private pipeline platform, no source |
+| [tradeproof-legal](https://github.com/Archangel-77/tradeproof-legal) | Privacy policy for the TradeProof Android app |
+
+### Private
+
+| Repository | What it is |
+| :--------- | :--------- |
+| hutsix | Source of the commercial automation app above |
+| appforge | Builds a small app from a plain-English description: a cloud model plans, a local model implements, then a verify-and-repair loop |
+| tradeproof | Android app that turns photographed receipts into invoice PDFs |
+| glaucometrics | Clinician-in-the-loop glaucoma record keeping and decision support |
+| listing-copilot | Real-estate SaaS built on Next.js |
+| promo-hutsix | Outreach pipeline for Hutsix: finds streamers, drafts one email each, sends only after approval |
+| project_x | Dataset generation and YOLOX training platform |
+| RenewalRadar | Early scaffolding for a renewal-risk product, not built past that |
+| replykit | Chrome extension for reusable snippets |
 
 ---
 
