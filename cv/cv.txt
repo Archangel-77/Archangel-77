@@ -33,7 +33,7 @@ Career-guidance platform that maps emerging roles and career paths using AI anal
   React.
 
 INDEPENDENT SOFTWARE DEVELOPER - HUTSIX
-2022 - present | sold commercially since 2026, 18 releases
+2022 - present | sold commercially since 2026, 26 releases
 
 Windows desktop automation app written in Python with PySide6. I wrote its core and its
 UI myself, with AI assistance for much of the remaining code.
